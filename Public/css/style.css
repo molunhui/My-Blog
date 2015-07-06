@@ -1,0 +1,217 @@
+/* 仪表盘 */
+
+.dashboard h3 {
+  font-size: 24px;
+  padding-top: 20px;
+}
+
+.dashboard a.btn {
+  color: #fff;
+  margin-top: 20px;
+}
+
+.dashboard .message {
+  height: 80px;
+  overflow: hidden;
+  padding-left: 80px;
+}
+
+.dashboard .message img {
+  width: 80px;
+  height: 80px;
+  background-color: #E5E5E5;
+  float: left;
+  margin-left: -80px;
+}
+
+.dashboard .site-name {
+  overflow: hidden;
+  margin-left: 10px;
+}
+
+
+
+/* 文章管理 */
+.all-article .table {
+  border: 1px solid #DCDCDC;
+  margin-top: 40px;
+}
+.all-article .table th{text-align: center}
+.all-article .table form{
+  display: inline-block;
+}
+
+.all-article .table button {
+  border: 0;
+  background: transparent;
+  display: inline;
+  color: #428bca;
+}
+.all-article .table button:hover {
+  color: #2a6496;
+  text-decoration: underline;
+}
+/* 新建文章 */
+.new-article form {
+  margin-top: 30px;
+}
+
+.new-article textarea.form-control {
+  height: 150px;
+  line-height: 20px;
+  padding: 5px;
+  resize: none;
+}
+#abstract{
+  width: 500px;
+  height: 200px;
+  padding: 5px;
+}
+
+/*  栏目管理 */
+.category form {
+  width: 100%;
+}
+
+.category form .form-group {
+  margin-left: 20px;
+}
+
+.category .form-control {
+  width: 200px;
+  margin-left: 15px;
+}
+
+.category .table {
+  min-height: 300px;
+  margin-top: 35px;
+  text-align: left;
+  line-height: 40px;
+}
+
+.category .sort-id {
+  width: 80px;
+}
+
+/* 添加管理员 */
+.add-user form{
+  min-height: 300px;
+  margin-top: 40px;
+}
+
+/* 网站设置 */
+.web img {
+  width: 80px;
+  height: 80px;
+  background: #ccc;
+}
+
+.web .uploadify-button {
+  font-family: "微软雅黑";
+  color: #333;
+  background: #fff;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font: normal 12px "微软雅黑";
+  text-align: center;
+  text-shadow: none;
+  width: 100%;
+}
+
+.web .uploadify-button:hover {
+  background: #e6e6e6 !important;
+  border-color: #adadad;
+}
+
+/*留言板*/
+.guestBook {
+  color: #5d5d5d;
+  width: 90%;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #5d5d5d;
+  border-radius: 10px;
+}
+
+.style1 {
+  padding-bottom: 10px;
+  border-bottom: 2px solid #5d5d5d;
+}
+
+.style2 {
+  padding: 10px 0 10px 0;
+  border-bottom: 1px solid #5d5d5d;
+}
+
+.guestBook .authorInfo {
+  width: 100%;
+  height: 100px;
+  border-bottom: 1px solid #5d5d5d;
+}
+
+.guestBook .authorInfo p {
+  padding: 10px;
+}
+
+.guestBook .box {
+  margin-top: 50px;
+}
+
+.guestBook .box .list-title {
+  font-weight: 700;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #5d5d5d;
+}
+
+.guestBook .list {
+  margin-top: 20px;
+}
+.guestBook .list>li{
+  border-bottom: 1px solid #5d5d5d;
+}
+
+.guestBook .list img {
+  float: left;
+}
+
+.guestBook .list .box-guestBook img {
+  float: left;
+}
+
+.guestBook .list .header-guestBook {
+  margin-left: 70px;
+}
+
+.guestBook .list .cont-guestBook {
+  padding: 10px 0 0 80px;
+  min-height: 100px;
+}
+
+.guestBook .list .footer-guestBook {
+  padding: 10px 0 0 70px;
+}
+
+.guestBook .list .footer-guestBook .post_time {
+  float: left;
+}
+
+.guestBook .footer-guestBook a {
+  padding-left: 50px;
+}
+
+.guestBook form {
+  display: none;
+  margin: 15px 0 15px 100px;
+}
+
+.guestBook form .submit {
+  width: 70px;
+  margin-top: 20px;
+}
+
+/*留言板第二层添加缩进*/
+.guestBook .child-list {
+  border-top: 1px solid #5d5d5d;
+  padding-top: 15px;
+  margin-left: 70px;
+}

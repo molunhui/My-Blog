@@ -1,0 +1,35 @@
+body {
+  width: 100%;
+  background-color: #F8F8F8;
+  font-family: "微软雅黑", Arial;
+}
+
+/* header { */
+.header {
+  height: 50px;
+  background-color: #434343;
+  margin: 0 auto;
+  border-bottom: 1px solid #434343
+}
+
+.header .logo {
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+  background-color: #0074A2;
+  float: left;
+  width: 150px;
+  height: 50px;
+  border: 0;
+  line-height: 50px;
+}
+
+.container{
+  width: 100%;
+  min-height: 360px;
+}
+.container .main{
+  width: 100%;
+  min-height:300px;
+  margin: 20px auto;
+}

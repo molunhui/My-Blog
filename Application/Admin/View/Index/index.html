@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <include file="Public/style"/>
+  <title>仪表盘</title>
+</head>
+<body>
+<include file="Public/header"/>
+<div class="container">
+  <include file="Public/sidebar"/>
+  <div class="main dashboard">
+    <h3 class="title "><strong>仪表盘</strong></h3>
+    <div class="content">
+      <div>
+        <h3>欢迎使用ohana</h3>
+        <h4 class="sm-title">从这里开始：</h4>
+        <br/>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <p class="h4">基本信息</p>
+          <div class="message">
+            <img src="__PUBLIC__/upload/img/{$site.logo}" alt="LOGO" />
+            <div class="site-name">{$site.name}</div>
+          </div>
+          <a href="{:U('site/edit')}" class="btn btn-primary">设置网站信息</a>
+        </div>
+        <div class="col-md-4 next">
+          <p class="h4">接下来</p>
+          <a href="{:U('category/cateList')}">添加一个栏目</a>
+          <br/>
+          <a href="{:U('article/add')}">新建一篇文章</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<include file="Public/footer"/>
+</body>
+<include file = "Public/script"/>
+</html>

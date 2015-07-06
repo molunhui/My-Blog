@@ -1,0 +1,105 @@
+.guestBook {
+  width: 720px;
+  color: #5d5d5d;
+  margin: 20px auto;
+  padding: 15px;
+  border: 1px solid #5d5d5d;
+  border-radius: 10px;
+}
+
+.style1 {
+  padding-bottom: 10px;
+  border-bottom: 2px solid #5d5d5d;
+}
+
+.style2 {
+  padding: 10px 0 10px 0;
+  border-bottom: 1px solid #5d5d5d;
+}
+
+.guestBook .authorInfo {
+  width: 100%;
+  height: 100px;
+  border-bottom: 1px solid #5d5d5d;
+}
+
+.guestBook .authorInfo p {
+  padding: 10px;
+}
+
+/*留言板输入留言*/
+.guestBook form {
+  margin-top: 20px;
+}
+
+.guestBook form .form-group {
+  font-weight: 700;
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+
+.guestBook form .submit {
+  width: 70px;
+  height: 25px;
+  margin-top: 20px;
+}
+
+
+/*留言板模块*/
+.guestBook .box {
+  margin-top: 50px;
+}
+
+/*留言板结构样式--》*/
+.guestBook .box .list-title {
+  font-weight: 700;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #5d5d5d;
+}
+
+.guestBook .list {
+  margin-top: 20px;
+}
+.guestBook .list>li{
+  border-bottom: 1px solid #5d5d5d;
+  background-color: #F2EDEA;
+  padding: 10px;
+}
+
+.guestBook .list img {
+  float: left;
+}
+
+.guestBook .list .box-guestBook img {
+  float: left;
+}
+
+.guestBook .list .header-guestBook {
+  margin-left: 70px;
+}
+
+.guestBook .list .cont-guestBook {
+  padding: 10px 0 0 80px;
+  min-height: 100px;
+}
+
+.guestBook .list .footer-guestBook {
+  padding: 10px 0 0 70px;
+}
+
+.guestBook .list .time {
+  margin-left: 70px;
+}
+
+.guestBook .footer-guestBook a {
+  padding-left: 50px;
+}
+/*--》留言板结构样式*/
+
+
+/*留言板第二层添加缩进*/
+.guestBook .child-list {
+  border-top: 1px solid #5d5d5d;
+  padding-top: 15px;
+  margin-left: 70px;
+}
