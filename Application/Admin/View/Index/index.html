@@ -11,6 +11,7 @@
   <include file="Public/sidebar"/>
   <div class="main dashboard">
     <h3 class="title "><strong>仪表盘</strong></h3>
+
     <div class="content">
       <div>
         <h3>欢迎使用ohana</h3>
@@ -20,8 +21,10 @@
       <div class="row">
         <div class="col-md-4">
           <p class="h4">基本信息</p>
+
           <div class="message">
-            <img src="__PUBLIC__/upload/img/{$site.logo}" alt="LOGO" />
+            <img src="__PUBLIC__/upload/img/{$site.logo}" alt="LOGO"/>
+
             <div class="site-name">{$site.name}</div>
           </div>
           <a href="{:U('site/edit')}" class="btn btn-primary">设置网站信息</a>
@@ -38,5 +41,5 @@
 </div>
 <include file="Public/footer"/>
 </body>
-<include file = "Public/script"/>
+<include file="Public/script"/>
 </html>

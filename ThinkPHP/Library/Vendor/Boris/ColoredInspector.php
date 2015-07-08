@@ -16,23 +16,23 @@ namespace Boris;
  */
 class ColoredInspector implements Inspector {
   static $TERM_COLORS = array(
-    'black'        => "\033[0;30m",
-    'white'        => "\033[1;37m",
-    'none'         => "\033[1;30m",
-    'dark_grey'    => "\033[1;30m",
-    'light_grey'   => "\033[0;37m",
-    'dark_red'     => "\033[0;31m",
-    'light_red'    => "\033[1;31m",
-    'dark_green'   => "\033[0;32m",
-    'light_green'  => "\033[1;32m",
-    'dark_yellow'  => "\033[0;33m",
+    'black' => "\033[0;30m",
+    'white' => "\033[1;37m",
+    'none' => "\033[1;30m",
+    'dark_grey' => "\033[1;30m",
+    'light_grey' => "\033[0;37m",
+    'dark_red' => "\033[0;31m",
+    'light_red' => "\033[1;31m",
+    'dark_green' => "\033[0;32m",
+    'light_green' => "\033[1;32m",
+    'dark_yellow' => "\033[0;33m",
     'light_yellow' => "\033[1;33m",
-    'dark_blue'    => "\033[0;34m",
-    'light_blue'   => "\033[1;34m",
-    'dark_purple'  => "\033[0;35m",
+    'dark_blue' => "\033[0;34m",
+    'light_blue' => "\033[1;34m",
+    'dark_purple' => "\033[0;35m",
     'light_purple' => "\033[1;35m",
-    'dark_cyan'    => "\033[0;36m",
-    'light_cyan'   => "\033[1;36m",
+    'dark_cyan' => "\033[0;36m",
+    'light_cyan' => "\033[1;36m",
   );
 
   private $_fallback;
@@ -108,13 +108,13 @@ class ColoredInspector implements Inspector {
 
   public function _dump($value) {
     $tests = array(
-      'is_null'    => '_dumpNull',
-      'is_string'  => '_dumpString',
-      'is_bool'    => '_dumpBoolean',
+      'is_null' => '_dumpNull',
+      'is_string' => '_dumpString',
+      'is_bool' => '_dumpBoolean',
       'is_integer' => '_dumpInteger',
-      'is_float'   => '_dumpFloat',
-      'is_array'   => '_dumpArray',
-      'is_object'  => '_dumpObject'
+      'is_float' => '_dumpFloat',
+      'is_array' => '_dumpArray',
+      'is_object' => '_dumpObject'
     );
 
     foreach ($tests as $predicate => $outputMethod) {
@@ -177,32 +177,32 @@ class ColoredInspector implements Inspector {
     $self = $this;
 
     return array(
-      'name'     => $this->_colorize('keyword', $type),
+      'name' => $this->_colorize('keyword', $type),
       'children' => empty($vars) ? array() : array_combine(
-        array_map(array($this, '_dump'), array_keys($vars)),
-        array_map(
-          function($v) use($self, $nextSeen) {
-            if (is_object($v)) {
-              return $self->_buildAst(
-                sprintf('object(%s)', get_class($v)),
-                $v,
-                $nextSeen
-              );
-            } elseif (is_array($v)) {
-              return $self->_buildAst('array', $v, $nextSeen);
-            } else {
-              return $self->_dump($v);
-            }
-          },
-          array_values($vars)
+          array_map(array($this, '_dump'), array_keys($vars)),
+          array_map(
+            function ($v) use ($self, $nextSeen) {
+              if (is_object($v)) {
+                return $self->_buildAst(
+                  sprintf('object(%s)', get_class($v)),
+                  $v,
+                  $nextSeen
+                );
+              } elseif (is_array($v)) {
+                return $self->_buildAst('array', $v, $nextSeen);
+              } else {
+                return $self->_dump($v);
+              }
+            },
+            array_values($vars)
+          )
         )
-      )
     );
   }
 
   public function _astToString($node, $indent = 0) {
     $children = $node['children'];
-    $self     = $this;
+    $self = $this;
 
     return implode(
       "\n",
@@ -211,7 +211,7 @@ class ColoredInspector implements Inspector {
         implode(
           ",\n",
           array_map(
-            function($k) use($self, $children, $indent) {
+            function ($k) use ($self, $children, $indent) {
               if (is_array($children[$k])) {
                 return sprintf(
                   '%s%s => %s',
@@ -239,9 +239,9 @@ class ColoredInspector implements Inspector {
   private function _defaultColorMap() {
     return array(
       'integer' => 'light_green',
-      'float'   => 'light_yellow',
-      'string'  => 'light_red',
-      'bool'    => 'light_purple',
+      'float' => 'light_yellow',
+      'string' => 'light_red',
+      'bool' => 'light_purple',
       'keyword' => 'light_cyan',
       'comment' => 'dark_grey',
       'default' => 'none'

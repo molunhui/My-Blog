@@ -44,7 +44,6 @@
   margin-top: 20px;
 }
 
-
 /*留言板模块*/
 .guestBook .box {
   margin-top: 50px;
@@ -60,7 +59,8 @@
 .guestBook .list {
   margin-top: 20px;
 }
-.guestBook .list>li{
+
+.guestBook .list > li {
   border-bottom: 1px solid #5d5d5d;
   background-color: #F2EDEA;
   padding: 10px;
@@ -94,8 +94,8 @@
 .guestBook .footer-guestBook a {
   padding-left: 50px;
 }
-/*--》留言板结构样式*/
 
+/*--》留言板结构样式*/
 
 /*留言板第二层添加缩进*/
 .guestBook .child-list {

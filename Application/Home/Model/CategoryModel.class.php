@@ -1,5 +1,6 @@
 <?php
 namespace Home\Model;
+
 use Think\Model;
 
 class CategoryModel extends Model {
@@ -9,10 +10,11 @@ class CategoryModel extends Model {
     return $this->select();
   }
 
-  function getCategoryTitleById($id){
+  function getCategoryTitleById($id) {
     return $this->where(array("id" => $id))->find();
   }
-  function getTree(){
+
+  function getTree() {
     $list = $this->order(' cre_time desc')->select();
     return tree($list);
   }

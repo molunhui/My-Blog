@@ -4,10 +4,15 @@
     <div class="personal-file">
       <figure><img src="__PUBLIC__/Home-images/me.png" width="200px" height="150px"></figure>
       <p>姓名：莫伦辉</p>
+
       <p>网名：莫俊文</p>
-      <p>主页：<a href="index.html">www.Allen.com</a> </p>
+
+      <p>主页：<a href="index.html">www.Allen.com</a></p>
+
       <p>现居：肇庆市-肇庆学院</p>
+
       <p>职业：学生</p>
+
       <p>爱好：足球、动漫</p>
     </div>
   </div>
@@ -15,16 +20,21 @@
   <div class="frame">
     <h2 class="h2"><p>博客分类</p></h2>
     <ul class="list list-s1" data-role="accordion">
-        <foreach name="navigation" item ="nav" key="k">
-          <li>
-            <i class="arrow_carrot-2right" data-role="click-it"></i><a href="{:U('articleList/articleList', array(''), '')}/id/{$nav.id}">{$nav.name}(<php>echo(count($nav['children:']))</php>)</a>
-            <ul class="child-list">
-              <for start="0" end="count($nav['children:'])">
-                <li><a href="{:U('articleList/articleList', array(), '')}/id/{$nav['children:'][$i]['id']}">{$nav['children:'][$i]['name']}(<php>echo(count($nav['children:'][$i]['children:']))</php>)</a> </li>
-              </for>
-            </ul>
-          </li>
-        </foreach>
+      <foreach name="navigation" item="nav" key="k">
+        <li>
+          <i class="arrow_carrot-2right" data-role="click-it"></i><a
+            href="{:U('articleList/articleList', array(''), '')}/id/{$nav.id}">{$nav.name}(
+          <php>echo(count($nav['children:']))</php>
+          )</a>
+          <ul class="child-list">
+            <for start="0" end="count($nav['children:'])">
+              <li><a href="{:U('articleList/articleList', array(), '')}/id/{$nav['children:'][$i]['id']}">{$nav['children:'][$i]['name']}(
+                <php>echo(count($nav['children:'][$i]['children:']))</php>
+                )</a></li>
+            </for>
+          </ul>
+        </li>
+      </foreach>
     </ul>
   </div>
 
@@ -32,7 +42,7 @@
     <h2 class="h2"><p>近期文章</p></h2>
     <ul class="list list-s2">
       <volist name="lastArticle" id="art">
-        <li><a href="{:U('article/article', array(), '')}/id/{$art.id}">{$art.title}</a> </li>
+        <li><a href="{:U('article/article', array(), '')}/id/{$art.id}">{$art.title}</a></li>
       </volist>
     </ul>
   </div>

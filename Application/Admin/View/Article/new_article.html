@@ -10,80 +10,80 @@
 
 <body>
 <include file="Public/header"/>
-  <div class="container">
-    <include file="Public/sidebar"/>
-    <div class="main new-article">
-      <h3 class="title "><strong>新建文章</strong></h3>
+<div class="container">
+  <include file="Public/sidebar"/>
+  <div class="main new-article">
+    <h3 class="title "><strong>新建文章</strong></h3>
 
-      <div class="content">
-        <present name="article">
-          <form class="form-horizontal" role="form" action="{:U('runEdit')} " method="post">
-            <input type="hidden" name="id" value="{$article.id}"/>
-        <else/>
-            <form class="form-horizontal" role="form" action="{:U('runAdd')} " method="post">
-        </present>
-          <div class="form-group group1">
-            <label class="col-md-2 control-label">文章标题:</label>
+    <div class="content">
+      <present name="article">
+        <form class="form-horizontal" role="form" action="{:U('runEdit')} " method="post">
+          <input type="hidden" name="id" value="{$article.id}"/>
+          <else/>
+          <form class="form-horizontal" role="form" action="{:U('runAdd')} " method="post">
+      </present>
+      <div class="form-group group1">
+        <label class="col-md-2 control-label">文章标题:</label>
 
-            <div class="col-sm-6">
-              <input type="text" class="form-control" name="title" value="{$article.title}">
-            </div>
-          </div>
-          <div class="form-group">
-            <label class="col-md-2 control-label">栏目:</label>
-
-            <div class="col-md-3">
-              <select class="form-control" id="select" name="cid">
-                <option value="0">请选择</option>
-                <volist name="categories" id="data">
-                  <if condition="$article['cid'] eq $data['id']">
-                    <option value="{$data.id}" selected> {$data['html']} {$data['name']} </option>
-                  <else/>
-                    <option value="{$data.id}"> {$data['html']} {$data['name']} </option>
-                  </if>
-                </volist>
-              </select>
-            </div>
-          </div>
-        <div class="form-group">
-          <label class="col-md-2 control-label">文章摘要:</label>
-
-          <div class="col-md-6">
-            <textarea data-role="editor_id" name="abstract" style="width:700px;height:300px;">
-              {$article.abstract}
-            </textarea>
-          </div>
+        <div class="col-sm-6">
+          <input type="text" class="form-control" name="title" value="{$article.title}">
         </div>
-          <div class="form-group">
-            <label class="col-md-2 control-label">文章正文:</label>
-
-            <div class="col-md-6">
-              <textarea data-role="editor_id" name="content" style="width:700px;height:300px;">
-                {$article.content}
-              </textarea>
-            </div>
-          </div>
-       <!-- <div class="form-group">
-          <label class="control-label col-md-4">上传图片：</label>
-          <div class="col-md-8">
-            <notempty name="site['logo']">
-              <img id="logo_img" src="__PUBLIC__/upload/img/{$site.logo}" alt="LOGO" />
-            </notempty>
-          </div>
-        </div>
-        <div class="form-group">
-          <label class="control-label col-md-4"></label>
-          <div class="col-md-8">
-            <input id="file1" type="file" />
-          </div>-->
-        <!--</div>-->
-          <div class="col-md-offset-2">
-            <input type="submit" class="btn btn-primary" value="保存添加">
-          </div>
-        </form>
       </div>
+      <div class="form-group">
+        <label class="col-md-2 control-label">栏目:</label>
+
+        <div class="col-md-3">
+          <select class="form-control" id="select" name="cid">
+            <option value="0">请选择</option>
+            <volist name="categories" id="data">
+              <if condition="$article['cid'] eq $data['id']">
+                <option value="{$data.id}" selected> {$data['html']} {$data['name']}</option>
+                <else/>
+                <option value="{$data.id}"> {$data['html']} {$data['name']}</option>
+              </if>
+            </volist>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-2 control-label">文章摘要:</label>
+
+        <div class="col-md-6">
+          <textarea data-role="editor_id" name="abstract" style="width:700px;height:300px;">
+            {$article.abstract}
+          </textarea>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-2 control-label">文章正文:</label>
+
+        <div class="col-md-6">
+          <textarea data-role="editor_id" name="content" style="width:700px;height:300px;">
+            {$article.content}
+          </textarea>
+        </div>
+      </div>
+      <!-- <div class="form-group">
+         <label class="control-label col-md-4">上传图片：</label>
+         <div class="col-md-8">
+           <notempty name="site['logo']">
+             <img id="logo_img" src="__PUBLIC__/upload/img/{$site.logo}" alt="LOGO" />
+           </notempty>
+         </div>
+       </div>
+       <div class="form-group">
+         <label class="control-label col-md-4"></label>
+         <div class="col-md-8">
+           <input id="file1" type="file" />
+         </div>-->
+      <!--</div>-->
+      <div class="col-md-offset-2">
+        <input type="submit" class="btn btn-primary" value="保存添加">
+      </div>
+      </form>
     </div>
   </div>
+</div>
 <include file="Public/footer"/>
 </body>
 <include file="Public/script"/>
@@ -92,7 +92,7 @@
 <!--<script src="__PUBLIC__/js/lib/uploadify/jquery.uploadify.js"></script>
 <script src="__PUBLIC__/js/upload.js"></script>-->
 <script>
-  KindEditor.ready(function(K) {
+  KindEditor.ready(function (K) {
     var editor = K.create('textarea[name="abstract,content"]');
   });
 </script>

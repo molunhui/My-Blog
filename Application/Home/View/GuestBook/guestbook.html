@@ -7,41 +7,44 @@
   <title>留言板</title>
 </head>
 <body>
-  <include file="Public/header"/>
-  <div class="container">
-    <include file="Public/sidebar"/>
-      <div class="main guestBook">
-        <p class="style1">留言板</p>
-        <p class="style2">主人寄语</p>
-        <div class="authorInfo">
-          <p>欢迎留言！</p>
-        </div>
-        <!-- 多说评论框 start -->
-        <div class="ds-thread" data-thread-key="" data-title="留言板" data-url="{:U('guestBook/guestBook')}"></div>
-        <!-- 多说评论框 end -->
-        <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-        <script type="text/javascript">
-          var duoshuoQuery = {short_name:"phlen"};
-          (function() {
-            var ds = document.createElement('script');
-            ds.type = 'text/javascript';ds.async = true;
-            ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.unstable.js';
-            ds.charset = 'UTF-8';
-            (document.getElementsByTagName('head')[0]
-                || document.getElementsByTagName('body')[0]).appendChild(ds);
-          })();
-        </script>
-        <!-- 多说公共JS代码 end -->
+<include file="Public/header"/>
+<div class="container">
+  <include file="Public/sidebar"/>
+  <div class="main guestBook">
+    <p class="style1">留言板</p>
 
-      </div>
+    <p class="style2">主人寄语</p>
+
+    <div class="authorInfo">
+      <p>欢迎留言！</p>
     </div>
-  <include file="Public/footer"/>
+    <!-- 多说评论框 start -->
+    <div class="ds-thread" data-thread-key="" data-title="留言板" data-url="{:U('guestBook/guestBook')}"></div>
+    <!-- 多说评论框 end -->
+    <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+    <script type="text/javascript">
+      var duoshuoQuery = {short_name: "phlen"};
+      (function () {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';
+        ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.unstable.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0]
+            || document.getElementsByTagName('body')[0]).appendChild(ds);
+      })();
+    </script>
+    <!-- 多说公共JS代码 end -->
+
+  </div>
+</div>
+<include file="Public/footer"/>
 </body>
 <script charset="utf-8" src="__PUBLIC__/editor/kindeditor.js"></script>
 <script charset="utf-8" src="__PUBLIC__/editor/lang/zh_CN.js"></script>
 <include file="Public/script"/>
 <script>
-  KindEditor.ready(function(K) {
+  KindEditor.ready(function (K) {
     var editor = K.create('textarea[name="messages"]');
   });
 </script>

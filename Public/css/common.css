@@ -42,8 +42,12 @@ body {
   height: 100%;
   display: block;
 }
-.header .title{color: #3578B1;
-  font-size: 24px;}
+
+.header .title {
+  color: #3578B1;
+  font-size: 24px;
+}
+
 .header .user .user-sub-menu {
   background-color: #434343;
   width: 120px;
@@ -55,6 +59,7 @@ body {
 .header .user .user-sub-menu li {
   padding-left: 10px;
 }
+
 /*.header form{
   color: #333;
 }
@@ -158,12 +163,13 @@ body {
   margin-top: 40px;
   margin-left: 20px;
   margin-right: 20px;
-  border: 1px solid #DCDCDC
-;
+  border: 1px solid #DCDCDC;
   padding: 20px;
 }
 
-.star{color: red}
+.star {
+  color: red
+}
 
 .table-list {
   overflow: hidden;
@@ -178,7 +184,7 @@ body {
   line-height: 40px;
 }
 
-.footer{
+.footer {
   text-align: center;
   margin-top: 20px;
   border-top: 1px solid #434343;

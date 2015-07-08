@@ -2,9 +2,9 @@
  * Created by Administrator on 15-1-9.
  */
 
-$(function(){
+$(function () {
 
-  $('[data-role="answer"]').click(function(){
+  $('[data-role="answer"]').click(function () {
     $("#form").show();
   })
 })

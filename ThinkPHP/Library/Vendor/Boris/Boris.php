@@ -20,15 +20,14 @@ class Boris {
   /**
    * Create a new REPL, which consists of an evaluation worker and a readline client.
    *
-   * @param string $prompt, optional
-   * @param string $historyFile, optional
+   * @param string $prompt , optional
+   * @param string $historyFile , optional
    */
   public function __construct($prompt = 'boris> ', $historyFile = null) {
     $this->setPrompt($prompt);
     $this->_historyFile = $historyFile
       ? $historyFile
-      : sprintf('%s/.boris_history', getenv('HOME'))
-      ;
+      : sprintf('%s/.boris_history', getenv('HOME'));
     $this->_inspector = new ColoredInspector();
   }
 
@@ -87,7 +86,7 @@ class Boris {
    *     DB::reset();
    *   });
    */
-  public function onFailure($hook){
+  public function onFailure($hook) {
     $this->_failureHooks[] = $hook;
   }
 
@@ -103,7 +102,7 @@ class Boris {
    * This method can safely be invoked repeatedly.
    *
    * @param array|string $local
-   * @param mixed $value, optional
+   * @param mixed $value , optional
    */
   public function setLocal($local, $value = null) {
     if (!is_array($local)) {
@@ -141,7 +140,8 @@ class Boris {
     pcntl_signal(SIGINT, SIG_IGN, true);
 
     if (!$pipes = stream_socket_pair(
-      STREAM_PF_UNIX, STREAM_SOCK_STREAM, STREAM_IPPROTO_IP)) {
+      STREAM_PF_UNIX, STREAM_SOCK_STREAM, STREAM_IPPROTO_IP)
+    ) {
       throw new \RuntimeException('Failed to create socket pair');
     }
 
