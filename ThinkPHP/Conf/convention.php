@@ -25,7 +25,7 @@ return  array(
     'ACTION_SUFFIX'         =>  '', // 操作方法后缀
     'MULTI_MODULE'          =>  true, // 是否允许多模块 如果为false 则必须设置 DEFAULT_MODULE
     /*'MODULE_DENY_LIST'      =>  array('Common','Runtime'),*/
-    'MODULE_DENY_LIST' => array('Common','User','Admin','Install'),
+    'MODULE_DENY_LIST' => array('Common','User','Install'),
     'MODULE_ALLOW_LIST' => array('Home','Admin'),
     'CONTROLLER_LEVEL'      =>  1,
     'APP_AUTOLOAD_LAYER'    =>  'Controller,Model', // 自动加载的应用类库层 关闭APP_USE_NAMESPACE后有效
