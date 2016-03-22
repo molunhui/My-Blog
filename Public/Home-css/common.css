@@ -1,27 +1,21 @@
-body {
-  font-size: 12px;
-  background: #E8DFD8 url(../Home-images/top.jpg) 50% top scroll no-repeat;
-  color: #5d5d5d;
+body{
+  font-size:12px;
+  background:#E8DFD8 url(../Home-images/top.jpg)  50% top scroll no-repeat;
+  color:#5d5d5d;
+  font-family: "微软雅黑";
 }
 
 /*a:hover{left: 20px;}*/
-.header {
+.header{
   width: 1000px;
   padding: 40px 0;
   margin: auto;
   line-height: 2;
 }
+.h1{font-size: 22px;}
+.h2{font-size: 14px;font-weight: bold;}
 
-.h1 {
-  font-size: 22px;
-}
-
-.h2 {
-  font-size: 14px;
-  font-weight: bold;
-}
-
-.header h1 a {
+.header h1 a{
   text-decoration: none;
   font-size: 22px;
   color: #000000;
@@ -30,20 +24,18 @@ body {
   position: relative;
 }
 
-.header .word {
+.header .word{
   text-decoration: none;
   color: #5d5d5d;
   margin-left: 2em;
   position: relative;
 }
-
-.nav-swf {
+.nav-swf{
   width: 1000px;
   position: relative;
   margin: auto;
 }
-
-.nav {
+.nav{
   display: block;
   width: 1000px;
   height: 40px;
@@ -61,20 +53,18 @@ body {
   float: left;
 }
 
-.nav ul li a {
+.nav ul li a{
   left: 0px;
   display: block;
   text-decoration: none;
   color: #fff;
   position: relative;
 }
-
-.nav li a:hover {
+.nav li a:hover{
   font-weight: bold;
   font-size: 14px;
 }
-
-.container {
+.container{
   width: 1030px;
   min-height: 300px;
   margin: 0 auto;
@@ -82,23 +72,22 @@ body {
   overflow: hidden;
 }
 
-.main {
+.main{
   width: 745px;
   float: left;
   clear: left;
 }
 
-.sidebar {
+.sidebar{
   width: 276px;
   float: right;
   overflow: hidden;
 }
 
-.sidebar .frame {
+.sidebar .frame{
   margin-bottom: 60px;
 }
-
-.sidebar h2 {
+.sidebar h2{
   color: #fff;
   font-family: "微软雅黑";
   width: 100%;
@@ -106,7 +95,7 @@ body {
   border-bottom: 1px solid #FFFFFF;
 }
 
-.sidebar h2 p {
+.sidebar h2 p{
   width: 180px;
   height: 24px;
   margin: 15px 0 0 40px;
@@ -115,70 +104,63 @@ body {
   text-align: center;
 }
 
-.sidebar figure {
+.sidebar figure{
   margin-left: 0px;
 }
 
-.personal-file {
+.personal-file{
   line-height: 2;
   margin-left: 40px;
 }
 
-.personal-file a {
+.personal-file a{
   color: #099;
 }
 
-.frame .list {
+.frame .list{
   margin: 20px 0 0 40px;
   list-style: none;
   line-height: 2;
 }
 
-.frame .list-s2 li {
+.frame .list-s2 li{
   background: url("../Home-images/list.gif") left no-repeat;
 }
 
-.frame .list li > ul {
+.frame .list li>ul{
   display: none;
 }
-
 /*.frame .more li{
   background: none;
 }*/
-.list-s1 li > ul > li {
-  width: 200px;
-}
+.list-s1 li>ul>li{width: 200px;}
+.list-s1 li>a:hover{left: 0px;}
 
-.list-s1 li > a:hover {
-  left: 0px;
-}
-
-.list-s1 li > ul li {
+.list-s1 li>ul li{
   margin-left: 15px;
   padding-left: 10px;
   background: url("../Home-images/list.gif") left no-repeat;
 }
-
-.list-s1 i {
+.list-s1 i{
   color: red;
   cursor: pointer;
 }
 
-.list li a {
+.list li a{
   text-decoration: none;
   color: #5d5d5d;
   position: relative;
   padding-left: 20px;
 }
-
-.list-s1 li a {
+.list-s1 li a{
   text-decoration: none;
   color: #5d5d5d;
   position: relative;
   padding-left: 5px;
 }
 
-.footer {
+
+.footer{
   line-height: 40px;
   margin-top: 15px;
   height: 40px;

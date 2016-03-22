@@ -1,8 +1,8 @@
-    <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-        <%@ page import="java.util.*,java.io.*" %>
-        <%@ page import="java.text.SimpleDateFormat" %>
-        <%@ page import="org.json.simple.*" %>
-            <%
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page import="java.util.*,java.io.*" %>
+<%@ page import="java.text.SimpleDateFormat" %>
+<%@ page import="org.json.simple.*" %>
+<%
 
 /**
  * KindEditor JSP
@@ -106,7 +106,7 @@ result.put("file_list", fileList);
 response.setContentType("application/json; charset=UTF-8");
 out.println(result.toJSONString());
 %>
-            <%!
+<%!
 public class NameComparator implements Comparator {
 	public int compare(Object a, Object b) {
 		Hashtable hashA = (Hashtable)a;

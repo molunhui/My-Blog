@@ -9,21 +9,21 @@ namespace Boris;
  */
 class ShallowParser {
   private $_pairs = array(
-    '(' => ')',
-    '{' => '}',
-    '[' => ']',
-    '"' => '"',
-    "'" => "'",
-    '//' => "\n",
-    '#' => "\n",
-    '/*' => '*/',
+    '('   => ')',
+    '{'   => '}',
+    '['   => ']',
+    '"'   => '"',
+    "'"   => "'",
+    '//'  => "\n",
+    '#'   => "\n",
+    '/*'  => '*/',
     '<<<' => '_heredoc_special_case_'
   );
 
   private $_initials;
 
   public function __construct() {
-    $this->_initials = '/^(' . implode('|', array_map(array($this, 'quote'), array_keys($this->_pairs))) . ')/';
+    $this->_initials   = '/^(' . implode('|', array_map(array($this, 'quote'), array_keys($this->_pairs))) . ')/';
   }
 
   /**
@@ -75,22 +75,23 @@ class ShallowParser {
 
   private function _createResult($buffer) {
     $result = new \stdClass();
-    $result->buffer = $buffer;
-    $result->stmt = '';
-    $result->state = null;
-    $result->states = array();
+    $result->buffer     = $buffer;
+    $result->stmt       = '';
+    $result->state      =  null;
+    $result->states     = array();
     $result->statements = array();
-    $result->stop = false;
+    $result->stop       = false;
 
     return $result;
   }
 
   private function _resetResult($result) {
-    $result->stop = false;
-    $result->state = end($result->states);
+    $result->stop       = false;
+    $result->state      = end($result->states);
     $result->terminator = $result->state
       ? '/^(.*?' . preg_quote($this->_pairs[$result->state], '/') . ')/s'
-      : null;
+      : null
+      ;
   }
 
   private function _combineStatements($result) {
@@ -98,7 +99,7 @@ class ShallowParser {
 
     foreach ($result->statements as $scope) {
       if (trim($scope) == ';' || substr(trim($scope), -1) != ';') {
-        $combined[] = ((string)array_pop($combined)) . $scope;
+        $combined[] = ((string) array_pop($combined)) . $scope;
       } else {
         $combined[] = $scope;
       }
@@ -108,7 +109,7 @@ class ShallowParser {
   }
 
   private function _prepareForDebug($result) {
-    $result->statements [] = $this->_prepareDebugStmt(array_pop($result->statements));
+    $result->statements []= $this->_prepareDebugStmt(array_pop($result->statements));
   }
 
   private function _initializeHeredoc($result) {
@@ -142,8 +143,7 @@ class ShallowParser {
 
   private function _scanEscapedChar($result) {
     if (($result->state == '"' || $result->state == "'")
-      && preg_match('/^[^' . $result->state . ']*?\\\\./s', $result->buffer, $match)
-    ) {
+        && preg_match('/^[^' . $result->state . ']*?\\\\./s', $result->buffer, $match)) {
 
       $result->stmt .= $match[0];
       $result->buffer = substr($result->buffer, strlen($match[0]));

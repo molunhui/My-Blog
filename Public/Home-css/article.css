@@ -1,4 +1,4 @@
-.articleStyle {
+.articleStyle{
   width: 99%;
   margin: 20px 5px 50px 5px;
   overflow: hidden;
@@ -9,34 +9,30 @@
 .articleStyle .post_time {
   background: url(../Home-images/blogbgs.png) no-repeat right;
 }
-
-.articleStyle h2 {
-  line-height: 29px;
-  height: 29px;
-  font-size: 14px;
-  color: #3b3b3b;
-  padding: 20px 0 15px 20px;
+.articleStyle h2{
+  line-height:29px;
+  height:29px;
+  font-size:14px;
+  color:#3b3b3b;
+  padding:20px 0 15px 20px;
 }
-
-.articleStyle h2 a {
+.articleStyle h2 a{
   text-decoration: none;
   font-size: 14px;
   font-weight: bold;
   color: #5d5d5d;
   position: relative;
 }
-
-.articleStyle h3 {
+.articleStyle h3{
   text-align: center;
   font-weight: bold;
 }
-
-.articleStyle p {
+.articleStyle p{
   line-height: 2;
   padding: 5px 0 15px 20px;
 }
 
-.article-more-link a {
+.article-more-link a{
   text-indent: 0;
   display: inline-block;
   line-height: 1em;
@@ -49,7 +45,6 @@
   text-shadow: 0 1px #FFF;
   text-decoration: none;
 }
-
 .article-more-link a:hover {
   background-color: #5d5d5d;
   color: #FFF;
@@ -61,11 +56,9 @@
   margin-left: 280px;
   border-radius: 4px;
 }
-
 .pagination > li {
   display: inline;
 }
-
 .pagination > li > a,
 .pagination > li > span {
   position: relative;
@@ -78,20 +71,17 @@
   background-color: #F2EDEA;
   border: 1px solid #ddd;
 }
-
 .pagination > li:first-child > a,
 .pagination > li:first-child > span {
   margin-left: 0;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
 }
-
 .pagination > li:last-child > a,
 .pagination > li:last-child > span {
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
 }
-
 .pagination > li > a:hover,
 .pagination > li > span:hover,
 .pagination > li > a:focus,
@@ -100,7 +90,6 @@
   background-color: #5d5d5d;
   border-color: #ddd;
 }
-
 .pagination > .active > a,
 .pagination > .active > span,
 .pagination > .active > a:hover,
@@ -114,7 +103,8 @@
   border-color: #428bca;
 }
 
-.ds-thread {
+
+.ds-thread{
   background-color: #F2EDEA;
   border-radius: 5px;
   padding: 10px;

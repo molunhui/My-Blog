@@ -10,7 +10,7 @@ namespace Boris;
 class Config {
   private $_searchPaths;
   private $_cascade = false;
-  private $_files = array();
+  private $_files   = array();
 
   /**
    * Create a new Config instance, optionally with an array
@@ -21,7 +21,7 @@ class Config {
    * effectively merged.
    *
    * @param array $searchPaths
-   * @param bool $cascade
+   * @param bool  $cascade
    */
   public function __construct($searchPaths = null, $cascade = false) {
     if (is_null($searchPaths)) {
@@ -34,7 +34,7 @@ class Config {
       $searchPaths[] = getcwd() . '/.borisrc';
     }
 
-    $this->_cascade = $cascade;
+    $this->_cascade     = $cascade;
     $this->_searchPaths = $searchPaths;
   }
 
@@ -51,7 +51,7 @@ class Config {
   public function apply(Boris $boris) {
     $applied = false;
 
-    foreach ($this->_searchPaths as $path) {
+    foreach($this->_searchPaths as $path) {
       if (is_readable($path)) {
         $this->_loadInIsolation($path, $boris);
 

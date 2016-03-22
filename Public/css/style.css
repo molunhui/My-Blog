@@ -1,5 +1,7 @@
 /* 仪表盘 */
-
+body{
+  font-family:"微软雅黑";
+}
 .dashboard h3 {
   font-size: 24px;
   padding-top: 20px;
@@ -29,17 +31,15 @@
   margin-left: 10px;
 }
 
+
+
 /* 文章管理 */
 .all-article .table {
   border: 1px solid #DCDCDC;
   margin-top: 40px;
 }
-
-.all-article .table th {
-  text-align: center
-}
-
-.all-article .table form {
+.all-article .table th{text-align: center}
+.all-article .table form{
   display: inline-block;
 }
 
@@ -49,12 +49,10 @@
   display: inline;
   color: #428bca;
 }
-
 .all-article .table button:hover {
   color: #2a6496;
   text-decoration: underline;
 }
-
 /* 新建文章 */
 .new-article form {
   margin-top: 30px;
@@ -66,8 +64,7 @@
   padding: 5px;
   resize: none;
 }
-
-#abstract {
+#abstract{
   width: 500px;
   height: 200px;
   padding: 5px;
@@ -99,7 +96,7 @@
 }
 
 /* 添加管理员 */
-.add-user form {
+.add-user form{
   min-height: 300px;
   margin-top: 40px;
 }
@@ -171,8 +168,7 @@
 .guestBook .list {
   margin-top: 20px;
 }
-
-.guestBook .list > li {
+.guestBook .list>li{
   border-bottom: 1px solid #5d5d5d;
 }
 

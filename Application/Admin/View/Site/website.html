@@ -10,66 +10,61 @@
 
 <body>
 
-<include file="Public/header"/>
-<div class="container">
-  <include file="Public/sidebar"/>
-  <div class="main web">
-    <div class="title"><strong>网站设置</strong>
-    </div>
-    <div class="content">
-      <form class="form-horizontal" role="form" style="width: 365px;" action="{:U(runEdit)}" method="post">
-        <div class="form-group">
-          <label class="control-label col-md-4"><span class="star">*</span> 网站名称：</label>
-
-          <div class="col-md-8">
-            <input value="{$site.name}" class="form-control required" title="Please type a website name" type="text"
-                   name="name"/>
+ <include file="Public/header"/>
+  <div class="container">
+    <include file="Public/sidebar"/>
+    <div class="main web">
+      <div class="title"><strong>网站设置</strong>
+      </div>
+      <div class="content">
+        <form class="form-horizontal" role="form" style="width: 365px;" action="{:U(runEdit)}" method="post">
+          <div class="form-group">
+            <label class="control-label col-md-4"><span class="star">*</span> 网站名称：</label>
+            <div class="col-md-8">
+              <input value="{$site.name}" class="form-control required" title="Please type a website name" type="text" name="name" />
+            </div>
           </div>
-        </div>
-        <div class="form-group">
-          <label class="control-label col-md-4">网站 Logo：</label>
-
-          <div class="col-md-8">
-            <notempty name="site['logo']">
-              <img id="logo_img" src="__PUBLIC__/upload/img/{$site.logo}" alt="LOGO"/>
-            </notempty>
+          <div class="form-group">
+            <label class="control-label col-md-4">网站 Logo：</label>
+            <div class="col-md-8">
+              <notempty name="site['logo']">
+                <img id="logo_img" src="__PUBLIC__/upload/img/{$site.logo}" alt="LOGO" />
+              </notempty>
+            </div>
           </div>
-        </div>
-        <div class="form-group">
-          <label class="control-label col-md-4"></label>
-
-          <div class="col-md-8">
-            <input id="file1" type="file"/>
+          <div class="form-group">
+            <label class="control-label col-md-4"></label>
+            <div class="col-md-8">
+              <input id="file1" type="file" />
+            </div>
           </div>
-        </div>
-        <div class="form-group">
-          <label class="control-label col-md-4"></label>
-
-          <div class="col-md-8">
-            <input type="hidden" value="{$site.id}" name="id"/>
-            <input type="hidden" value="{$site.logo}" name="logo"/>
-            <input class="btn btn-primary" type="submit" value="保存"/>
+          <div class="form-group">
+            <label class="control-label col-md-4"></label>
+            <div class="col-md-8">
+              <input type="hidden" value="{$site.id}" name="id" />
+              <input type="hidden" value="{$site.logo}" name="logo" />
+              <input class="btn btn-primary" type="submit" value="保存" />
+            </div>
           </div>
-        </div>
-      </form>
+        </form>
+      </div>
     </div>
   </div>
-</div>
 <include file="Public/footer"/>
 </body>
 <include file="Public/script"/>
 <script src="__PUBLIC__/js/lib/uploadify/jquery.uploadify.js"></script>
 <script>
-  $(function () {
+  $(function() {
     $("#file1").uploadify({
       width: 80,
       height: 30,
       swf: '__PUBLIC__/js/lib/uploadify/uploadify.swf',
       uploader: "{:U('uploadLogo')}",
       buttonText: "上传图片",
-      onUploadSuccess: function (file, data, respone) {
+      onUploadSuccess: function(file, data, respone) {
         var jsonData = JSON.parse(data);
-        if (jsonData.status === 'ok') {
+        if(jsonData.status === 'ok') {
           $("input[name=logo]").val(jsonData.data);
           $("#logo_img").attr('src', '__PUBLIC__/upload/img/' + jsonData.data);
         } else {

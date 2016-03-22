@@ -1,0 +1,11 @@
+[ 2014-10-14T16:04:46+08:00 ] 127.0.0.1 /Test/ohana-php/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001238s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007202s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007274s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004181s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004252s ]
+

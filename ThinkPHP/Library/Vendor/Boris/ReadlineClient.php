@@ -45,10 +45,10 @@ class ReadlineClient {
     }
 
     $parser = new ShallowParser();
-    $buf = '';
+    $buf    = '';
     $lineno = 1;
 
-    for (; ;) {
+    for (;;) {
       $this->_clear = false;
       $line = readline(
         sprintf(

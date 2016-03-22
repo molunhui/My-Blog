@@ -9,80 +9,80 @@
 
 <body>
 <include file="Public/header"/>
-<div class="container">
-  <include file="Public/sidebar"/>
-  <div class="main category">
-    <div class="title"><strong>栏目管理</strong>
-    </div>
-    <div class="content">
-      <form class="form-inline" role="form" action="{:U('runAddCate')}" method="post">
-        <div class="form-group">
-          <label for="name" class="control-label">栏目名称:</label>
-          <input type="hidden" name="id" value="{$category.id}">
-          <input type="text" id="name" name="name" class="form-control" value="{$category.name}">
-        </div>
-        <div class="form-group">
-          <label for="select" class="control-label">父栏目:</label>
-          <select class="form-control" id="select" name="pid">
-            <option value="0">请选择</option>
-            <volist name="parent" id="data">
-              <if condition="$category['pid'] eq $data['id']">
-                <option value="{$data.id}" selected> {$data['name']}</option>
+  <div class="container">
+    <include file="Public/sidebar"/>
+    <div class="main category">
+      <div class="title"><strong>栏目管理</strong>
+      </div>
+      <div class="content">
+        <form class="form-inline" role="form" action="{:U('runAddCate')}" method="post">
+          <div class="form-group">
+            <label for="name" class="control-label">栏目名称:</label>
+            <input type="hidden" name="id" value="{$category.id}">
+            <input type="text" id="name" name="name" class="form-control" value="{$category.name}">
+          </div>
+          <div class="form-group">
+            <label for="select" class="control-label">父栏目:</label>
+            <select class="form-control" id="select" name="pid">
+              <option value="0">请选择</option>
+              <volist name="parent" id="data">
+                <if condition="$category['pid'] eq $data['id']">
+                  <option value="{$data.id}" selected> {$data['name']} </option>
                 <elseif condition="$category['id'] neq $data['id']"/>
-                <option value="{$data.id}"> {$data['name']}</option>
-              </if>
-            </volist>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="select" class="control-label">排序ID:</label>
-          <input type="text" id="sort_id" name="sort_id" class="form-control sort-id" value="{$category.sort_id}">
-        </div>
-        <div class="form-group">
-          <input type="submit" class="btn btn-primary" value="添加栏目">
-        </div>
-      </form>
-      <div class="table">
-        <ul class="table-list">
-          <li class="row">
-            <div class="col-md-5">名称</div>
-            <div class="col-md-1">排序id</div>
-            <div class="col-md-2">文章数</div>
-            <div class="col-md-4">操作</div>
-          </li>
-          <volist name="list" id="vo">
-            <li class="row">
-              <div class="col-md-5"><a href="javascript:;">{$vo.name}</a>
-              </div>
-              <div class="col-md-1">{$vo.sort_id}</div>
-              <div class="col-md-2">100</div>
-              <div class="col-md-4 ">
-                <a href="{:U('cateList', array(), '')}/id/{$vo.id}"> 编辑</a>
-                <a href="javascript:;" data-id="{$vo.id}" class="del">删除</a>
-              </div>
-            </li>
-            <notempty name="vo['childNode']">
-              <volist name="vo['childNode']" id="child">
-                <li class="row">
-                  <div class="col-md-5"><a href="javascript:;">&nbsp; -- &nbsp;{$child.name}</a>
-                  </div>
-                  <div class="col-md-1">{$child.sort_id}</div>
-                  <div class="col-md-2">100</div>
-                  <div class="col-md-4 ">
-                    <a href="{:U('cateList', array(), '')}/id/{$child.id}"> 编辑</a>
-                    <a href="javascript:;" data-id="{$child.id}" class="del">删除</a>
-                  </div>
-                </li>
+                  <option value="{$data.id}"> {$data['name']} </option>
+                </if>
               </volist>
-            </notempty>
-          </volist>
-        </ul>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="select" class="control-label">排序ID:</label>
+            <input type="text" id="sort_id" name="sort_id" class="form-control sort-id" value="{$category.sort_id}">
+          </div>
+          <div class="form-group">
+            <input type="submit" class="btn btn-primary" value="添加栏目">
+          </div>
+        </form>
+        <div class="table">
+          <ul class="table-list">
+            <li class="row">
+              <div class="col-md-5">名称</div>
+              <div class="col-md-1">排序id</div>
+              <div class="col-md-2">文章数</div>
+              <div class="col-md-4">操作</div>
+            </li>
+            <volist name="list" id ="vo">
+              <li class="row">
+                <div class="col-md-5"><a href="javascript:;">{$vo.name}</a>
+                </div>
+                <div class="col-md-1">{$vo.sort_id}</div>
+                <div class="col-md-2">100</div>
+                <div class="col-md-4 ">
+                  <a href="{:U('cateList', array(), '')}/id/{$vo.id}"> 编辑</a>
+                  <a href="javascript:;" data-id="{$vo.id}" class="del">删除</a>
+                </div>
+              </li>
+              <notempty name="vo['childNode']">
+                <volist name="vo['childNode']" id="child">
+                  <li class="row">
+                    <div class="col-md-5"><a href="javascript:;">&nbsp; -- &nbsp;{$child.name}</a>
+                    </div>
+                    <div class="col-md-1">{$child.sort_id}</div>
+                    <div class="col-md-2">100</div>
+                    <div class="col-md-4 ">
+                      <a href="{:U('cateList', array(), '')}/id/{$child.id}"> 编辑</a>
+                      <a href="javascript:;" data-id="{$child.id}" class="del">删除</a>
+                    </div>
+                  </li>
+                </volist>
+              </notempty>
+            </volist>
+          </ul>
 
+        </div>
       </div>
     </div>
   </div>
-</div>
-<include file="Public/footer"/>
+  <include file="Public/footer"/>
 </body>
 <include file="Public/script"/>
 <script src="__PUBLIC__/js/del_cate.js"></script>

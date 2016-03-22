@@ -3,27 +3,20 @@
   <a href="javascript" class="word">去留无意，看庭前花开花落；宠辱不惊，望天上云卷云舒.....</a>
 </div>
 <div class="nav-swf">
-  <object id="customMenu" data="__PUBLIC__/Home-images/nav.swf" width="528" height="70"
-          type="application/x-shockwave-flash">
-    <param name="allowScriptAccess" value="always">
-    <param name="allownetworking" value="all">
-    <param name="allowFullScreen" value="true">
-    <param name="wmode" value="transparent">
-    <param name="menu" value="false">
-    <param name="scale" value="noScale">
-    <param name="salign" value="1">
+  <object id="customMenu" data="__PUBLIC__/Home-images/nav.swf" width="528" height="70" type="application/x-shockwave-flash"><param name="allowScriptAccess" value="always"><param name="allownetworking" value="all"><param name="allowFullScreen" value="true"><param name="wmode" value="transparent"><param name="menu" value="false"><param name="scale" value="noScale"><param name="salign" value="1">
   </object>
   <div class="nav" id="nav">
     <ul>
-      <li><a href="{:U('index/index')}">首页</a></li>
+      <li><a href="__ROOT__/index" >首页</a></li>
       <volist name="navigation" id="nav">
         <if condition="$nav.pid eq 0">
           <li>
-            <a href="{:U('articleList/articleList', array(), '')}/id/{$nav.id}">{$nav.name}</a>
+
+            <a href="__ROOT__/article/list/{$nav.id}">{$nav.name}</a>
           </li>
         </if>
       </volist>
-      <li><a href="{:U('guestBook/guestBook')}" title="留言版">留言版</a></li>
+      <li><a href="__ROOT__/guestBook" title="留言版">留言版</a></li>
     </ul>
   </div>
 </div>

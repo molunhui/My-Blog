@@ -52,7 +52,7 @@ $(function () {
     var curName = $("#cur_name").val();
     var name = $(this).val();
 
-    if (name === curName) {
+    if(name === curName) {
       return;
     }
 

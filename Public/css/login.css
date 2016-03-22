@@ -24,13 +24,12 @@ body {
   line-height: 50px;
 }
 
-.container {
+.container{
   width: 100%;
   min-height: 360px;
 }
-
-.container .main {
+.container .main{
   width: 100%;
-  min-height: 300px;
+  min-height:300px;
   margin: 20px auto;
 }

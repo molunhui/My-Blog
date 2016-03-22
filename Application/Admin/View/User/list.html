@@ -4,43 +4,43 @@
 <head>
   <meta charset="UTF-8">
   <title>Admin</title>
-  <include file="Public/style"/>
+  <include file = "Public/style"/>
 
 </head>
 
 <body>
-<include file="Public/header"/>
-<div class="container">
-  <include file='Public/sidebar'/>
-  <div class="main">
-    <div class="title"><strong>管理员</strong>
-    </div>
-    <div class="content">
-      <div class="table">
-        <ul class="table-list">
-          <li class="row">
-            <span class="col-md-4">用户名</span>
-            <span class="col-md-4">邮箱</span>
-            <span class="col-md-4">操作</span>
-          </li>
-          <volist name='list' id="vo">
+  <include file = "Public/header"/>
+  <div class="container">
+    <include file ='Public/sidebar'/>
+    <div class="main">
+      <div class="title"><strong>管理员</strong>
+      </div>
+      <div class="content">
+        <div class="table">
+          <ul class="table-list">
             <li class="row">
-              <span class="col-md-4">{$vo.name}</span>
-              <span class="col-md-4">{$vo.email}</span>
+              <span class="col-md-4">用户名</span>
+              <span class="col-md-4">邮箱</span>
+              <span class="col-md-4">操作</span>
+            </li>
+            <volist name = 'list' id ="vo">
+              <li class="row">
+                <span class="col-md-4">{$vo.name}</span>
+                <span class="col-md-4">{$vo.email}</span>
                 <span class="col-md-4 ">
                   <a href="{:U('edit', array(), '')}/id/{$vo.id}">编辑 </a>
                   <a href="javascript:;" data-id="{$vo.id}" class="del">删除</a>
               </span>
-            </li>
-          </volist>
-        </ul>
-      </div>
+              </li>
+            </volist>
+          </ul>
+        </div>
 
+      </div>
     </div>
   </div>
-</div>
 <include file="Public/footer"/>
 </body>
-<include file="Public/script"/>
+<include file = "Public/script"/>
 <script src="__PUBLIC__/js/del_user.js"></script>
 </html>

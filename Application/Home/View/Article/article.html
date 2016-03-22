@@ -3,49 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <volist name="article" id="var">
-    <title>{$var["title"]}</title>
+  <title>{$var["title"]}</title>
   </volist>
   <include file="Public/style"/>
   <link rel="stylesheet" href="__PUBLIC__/Home-css/article.css">
 </head>
 <body>
-<include file="Public/header"/>
-<div class="container">
-  <div class="main" id="main">
+  <include file="Public/header"/>
+  <div class="container">
+    <div class="main" id="main">
 
-    <div class="articleStyle">
-      <volist name="article" id="article">
-        <p class="post_time">发布于：{$article.post_time|date="Y-m-d H:i", ###}</p>
+      <div class="articleStyle">
+        <volist name="article" id="article">
+          <p class="post_time">发布于：{$article.post_time|date="Y-m-d H:i", ###}</p>
+          <h2><a href="javascript:;">{$article.title}</a></h2>
+          <p>{$article.content}</p>
+        </volist>
+      </div>
 
-        <h2><a href="javascript:;">{$article.title}</a></h2>
+      <!-- 多说评论框 start -->
+      <div class="ds-thread" data-thread-key="{$article.id}" data-title="{$article.title}" data-url="__ROOT__/home/article/{$article.id}"></div>
+      <!-- 多说评论框 end -->
+      <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+      <script type="text/javascript">
+        var duoshuoQuery = {short_name:"phlen"};
+        (function() {
+          var ds = document.createElement('script');
+          ds.type = 'text/javascript';ds.async = true;
+          ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+          ds.charset = 'UTF-8';
+          (document.getElementsByTagName('head')[0]
+              || document.getElementsByTagName('body')[0]).appendChild(ds);
+        })();
+      </script>
+      <!-- 多说公共JS代码 end -->
 
-        <p>{$article.content}</p>
-      </volist>
     </div>
-
-    <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="{$article.id}" data-title="{$article.title}"
-         data-url="{:U('article/article', array(), '')}/id/{$article.id}"></div>
-    <!-- 多说评论框 end -->
-    <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-    <script type="text/javascript">
-      var duoshuoQuery = {short_name: "phlen"};
-      (function () {
-        var ds = document.createElement('script');
-        ds.type = 'text/javascript';
-        ds.async = true;
-        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-        ds.charset = 'UTF-8';
-        (document.getElementsByTagName('head')[0]
-            || document.getElementsByTagName('body')[0]).appendChild(ds);
-      })();
-    </script>
-    <!-- 多说公共JS代码 end -->
-
+    <include file="Public/sidebar"/>
   </div>
-  <include file="Public/sidebar"/>
-</div>
-<include file="Public/footer"/>
+  <include file="Public/footer"/>
 </body>
 <include file="Public/script"/>
 </html>

@@ -1,0 +1,582 @@
+[ 2015-12-28T20:29:53+08:00 ] 127.0.0.1 /Test/ohana-php/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003275s ]
+NOTIC: [8] Use of undefined constant URL_ROUTER_ON - assumed 'URL_ROUTER_ON' G:\code\Test\ohana-php\Application\Home\Conf\config.php 第 6 行.
+NOTIC: [8] Use of undefined constant URL_ROUTE_RULES - assumed 'URL_ROUTE_RULES' G:\code\Test\ohana-php\Application\Home\Conf\config.php 第 8 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007433s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007534s ]
+SQL: SHOW COLUMNS FROM `ohana_category` [ RunTime:0.083798s ]
+SQL: SELECT * FROM `ohana_category` ORDER BY  cre_time desc  [ RunTime:0.017426s ]
+SQL: SHOW COLUMNS FROM `ohana_article` [ RunTime:0.066508s ]
+SQL: SELECT * FROM `ohana_article` ORDER BY post_time DESC LIMIT 6   [ RunTime:0.005283s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000148s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000254s ]
+NOTIC: [8] Undefined index: children: G:\code\Test\ohana-php\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 111 行.
+NOTIC: [8] Undefined index: children: G:\code\Test\ohana-php\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 111 行.
+NOTIC: [8] Undefined index: children: G:\code\Test\ohana-php\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 111 行.
+NOTIC: [8] Undefined index: children: G:\code\Test\ohana-php\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 111 行.
+NOTIC: [8] Undefined index: children: G:\code\Test\ohana-php\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 111 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.130443s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.130549s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.007270s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007341s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009438s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009527s ]
+
+[ 2015-12-28T20:30:29+08:00 ] 127.0.0.1 /Test/ohana-php/index.php/home/article/24
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000525s ]
+NOTIC: [8] Use of undefined constant URL_ROUTER_ON - assumed 'URL_ROUTER_ON' G:\code\Test\ohana-php\Application\Home\Conf\config.php 第 6 行.
+NOTIC: [8] Use of undefined constant URL_ROUTE_RULES - assumed 'URL_ROUTE_RULES' G:\code\Test\ohana-php\Application\Home\Conf\config.php 第 8 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000641s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000693s ]
+SQL: SHOW COLUMNS FROM `ohana_category` [ RunTime:0.009162s ]
+SQL: SELECT * FROM `ohana_category` ORDER BY  cre_time desc  [ RunTime:0.004233s ]
+SQL: SHOW COLUMNS FROM `ohana_article` [ RunTime:0.008336s ]
+SQL: SELECT * FROM `ohana_article` ORDER BY post_time DESC LIMIT 6   [ RunTime:0.004569s ]
+SQL: SELECT * FROM `ohana_article` WHERE `id` = 24  [ RunTime:0.000511s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000130s ]
+NOTIC: [8] Undefined index: children: G:\code\Test\ohana-php\Application\Runtime\Cache\Home\37d23b8de8b1006eeb4dee5f594561fd.php 第 77 行.
+NOTIC: [8] Undefined index: children: G:\code\Test\ohana-php\Application\Runtime\Cache\Home\37d23b8de8b1006eeb4dee5f594561fd.php 第 77 行.
+NOTIC: [8] Undefined index: children: G:\code\Test\ohana-php\Application\Runtime\Cache\Home\37d23b8de8b1006eeb4dee5f594561fd.php 第 77 行.
+NOTIC: [8] Undefined index: children: G:\code\Test\ohana-php\Application\Runtime\Cache\Home\37d23b8de8b1006eeb4dee5f594561fd.php 第 77 行.
+NOTIC: [8] Undefined index: children: G:\code\Test\ohana-php\Application\Runtime\Cache\Home\37d23b8de8b1006eeb4dee5f594561fd.php 第 77 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045959s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046052s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000939s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000999s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000715s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000755s ]
+
+[ 2015-12-28T20:30:29+08:00 ] 127.0.0.1 /Test/ohana-php/index.php/home/article/custom_menu.xml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000377s ]
+NOTIC: [8] Use of undefined constant URL_ROUTER_ON - assumed 'URL_ROUTER_ON' G:\code\Test\ohana-php\Application\Home\Conf\config.php 第 6 行.
+NOTIC: [8] Use of undefined constant URL_ROUTE_RULES - assumed 'URL_ROUTE_RULES' G:\code\Test\ohana-php\Application\Home\Conf\config.php 第 8 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000607s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000677s ]
+ERR: 非法操作:custom_menu.xml
+
+[ 2015-12-28T20:30:31+08:00 ] 127.0.0.1 /Test/ohana-php/index.php/Home/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000450s ]
+NOTIC: [8] Use of undefined constant URL_ROUTER_ON - assumed 'URL_ROUTER_ON' G:\code\Test\ohana-php\Application\Home\Conf\config.php 第 6 行.
+NOTIC: [8] Use of undefined constant URL_ROUTE_RULES - assumed 'URL_ROUTE_RULES' G:\code\Test\ohana-php\Application\Home\Conf\config.php 第 8 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000514s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000557s ]
+SQL: SHOW COLUMNS FROM `ohana_category` [ RunTime:0.010128s ]
+SQL: SELECT * FROM `ohana_category` ORDER BY  cre_time desc  [ RunTime:0.004435s ]
+SQL: SHOW COLUMNS FROM `ohana_article` [ RunTime:0.007823s ]
+SQL: SELECT * FROM `ohana_article` ORDER BY post_time DESC LIMIT 6   [ RunTime:0.004494s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000131s ]
+NOTIC: [8] Undefined index: children: G:\code\Test\ohana-php\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 111 行.
+NOTIC: [8] Undefined index: children: G:\code\Test\ohana-php\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 111 行.
+NOTIC: [8] Undefined index: children: G:\code\Test\ohana-php\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 111 行.
+NOTIC: [8] Undefined index: children: G:\code\Test\ohana-php\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 111 行.
+NOTIC: [8] Undefined index: children: G:\code\Test\ohana-php\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 111 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012252s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012326s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000436s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000490s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000949s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001023s ]
+
+[ 2015-12-28T20:30:31+08:00 ] 127.0.0.1 /Test/ohana-php/index.php/Home/index/custom_menu.xml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000606s ]
+NOTIC: [8] Use of undefined constant URL_ROUTER_ON - assumed 'URL_ROUTER_ON' G:\code\Test\ohana-php\Application\Home\Conf\config.php 第 6 行.
+NOTIC: [8] Use of undefined constant URL_ROUTE_RULES - assumed 'URL_ROUTE_RULES' G:\code\Test\ohana-php\Application\Home\Conf\config.php 第 8 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000539s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000607s ]
+ERR: 非法操作:custom_menu.xml
+
+[ 2015-12-28T20:30:36+08:00 ] 127.0.0.1 /Test/ohana-php/home/article/list/49
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000563s ]
+NOTIC: [8] Use of undefined constant URL_ROUTER_ON - assumed 'URL_ROUTER_ON' G:\code\Test\ohana-php\Application\Home\Conf\config.php 第 6 行.
+NOTIC: [8] Use of undefined constant URL_ROUTE_RULES - assumed 'URL_ROUTE_RULES' G:\code\Test\ohana-php\Application\Home\Conf\config.php 第 8 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000588s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000666s ]
+SQL: SHOW COLUMNS FROM `ohana_category` [ RunTime:0.007711s ]
+SQL: SELECT * FROM `ohana_category` ORDER BY  cre_time desc  [ RunTime:0.004798s ]
+SQL: SHOW COLUMNS FROM `ohana_article` [ RunTime:0.006930s ]
+SQL: SELECT * FROM `ohana_article` ORDER BY post_time DESC LIMIT 6   [ RunTime:0.004095s ]
+SQL: SELECT * FROM `ohana_category` WHERE `id` = 49 LIMIT 1   [ RunTime:0.001573s ]
+SQL: SHOW COLUMNS FROM `ohana_article` [ RunTime:0.010762s ]
+SQL: SELECT * FROM `ohana_article` WHERE `cid` = 49 ORDER BY post_time DESC LIMIT 0,2   [ RunTime:0.001881s ]
+SQL: SELECT count(id) as total_count FROM `ohana_article` WHERE `cid` = 49 LIMIT 1   [ RunTime:0.000348s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000159s ]
+NOTIC: [8] Undefined index: children: G:\code\Test\ohana-php\Application\Runtime\Cache\Home\ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 88 行.
+NOTIC: [8] Undefined index: children: G:\code\Test\ohana-php\Application\Runtime\Cache\Home\ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 88 行.
+NOTIC: [8] Undefined index: children: G:\code\Test\ohana-php\Application\Runtime\Cache\Home\ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 88 行.
+NOTIC: [8] Undefined index: children: G:\code\Test\ohana-php\Application\Runtime\Cache\Home\ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 88 行.
+NOTIC: [8] Undefined index: children: G:\code\Test\ohana-php\Application\Runtime\Cache\Home\ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 88 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.090604s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.090681s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000377s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000763s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000819s ]
+
+[ 2015-12-28T20:30:36+08:00 ] 127.0.0.1 /Test/ohana-php/home/article/list/custom_menu.xml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000392s ]
+NOTIC: [8] Use of undefined constant URL_ROUTER_ON - assumed 'URL_ROUTER_ON' G:\code\Test\ohana-php\Application\Home\Conf\config.php 第 6 行.
+NOTIC: [8] Use of undefined constant URL_ROUTE_RULES - assumed 'URL_ROUTE_RULES' G:\code\Test\ohana-php\Application\Home\Conf\config.php 第 8 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000857s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001108s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+NOTIC: [8] Undefined variable: title G:\code\Test\ohana-php\Application\Runtime\Cache\Home\ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 5 行.
+NOTIC: [8] Undefined variable: navigation G:\code\Test\ohana-php\Application\Runtime\Cache\Home\ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 24 行.
+NOTIC: [8] Undefined variable: articleList G:\code\Test\ohana-php\Application\Runtime\Cache\Home\ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 34 行.
+NOTIC: [8] Undefined variable: page G:\code\Test\ohana-php\Application\Runtime\Cache\Home\ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 48 行.
+NOTIC: [8] Undefined variable: article G:\code\Test\ohana-php\Application\Runtime\Cache\Home\ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 51 行.
+NOTIC: [8] Undefined variable: page G:\code\Test\ohana-php\Application\Runtime\Cache\Home\ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 51 行.
+NOTIC: [8] Undefined variable: page G:\code\Test\ohana-php\Application\Runtime\Cache\Home\ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 53 行.
+NOTIC: [8] Undefined variable: page G:\code\Test\ohana-php\Application\Runtime\Cache\Home\ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 60 行.
+NOTIC: [8] Undefined variable: page G:\code\Test\ohana-php\Application\Runtime\Cache\Home\ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 60 行.
+NOTIC: [8] Undefined variable: navigation G:\code\Test\ohana-php\Application\Runtime\Cache\Home\ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 85 行.
+NOTIC: [8] Undefined variable: lastArticle G:\code\Test\ohana-php\Application\Runtime\Cache\Home\ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 97 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014874s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014947s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000389s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000660s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000728s ]
+
+[ 2015-12-28T20:30:37+08:00 ] 127.0.0.1 /Test/ohana-php/home/article/list/48
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000408s ]
+NOTIC: [8] Use of undefined constant URL_ROUTER_ON - assumed 'URL_ROUTER_ON' G:\code\Test\ohana-php\Application\Home\Conf\config.php 第 6 行.
+NOTIC: [8] Use of undefined constant URL_ROUTE_RULES - assumed 'URL_ROUTE_RULES' G:\code\Test\ohana-php\Application\Home\Conf\config.php 第 8 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000587s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000645s ]
+SQL: SHOW COLUMNS FROM `ohana_category` [ RunTime:0.010019s ]
+SQL: SELECT * FROM `ohana_category` ORDER BY  cre_time desc  [ RunTime:0.005758s ]
+SQL: SHOW COLUMNS FROM `ohana_article` [ RunTime:0.008021s ]
+SQL: SELECT * FROM `ohana_article` ORDER BY post_time DESC LIMIT 6   [ RunTime:0.004063s ]
+SQL: SELECT * FROM `ohana_category` WHERE `id` = 48 LIMIT 1   [ RunTime:0.000375s ]
+SQL: SHOW COLUMNS FROM `ohana_article` [ RunTime:0.008486s ]
+SQL: SELECT * FROM `ohana_article` WHERE `cid` = 48 ORDER BY post_time DESC LIMIT 0,2   [ RunTime:0.004879s ]
+SQL: SELECT count(id) as total_count FROM `ohana_article` WHERE `cid` = 48 LIMIT 1   [ RunTime:0.000244s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000153s ]
+NOTIC: [8] Undefined index: children: G:\code\Test\ohana-php\Application\Runtime\Cache\Home\ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 88 行.
+NOTIC: [8] Undefined index: children: G:\code\Test\ohana-php\Application\Runtime\Cache\Home\ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 88 行.
+NOTIC: [8] Undefined index: children: G:\code\Test\ohana-php\Application\Runtime\Cache\Home\ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 88 行.
+NOTIC: [8] Undefined index: children: G:\code\Test\ohana-php\Application\Runtime\Cache\Home\ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 88 行.
+NOTIC: [8] Undefined index: children: G:\code\Test\ohana-php\Application\Runtime\Cache\Home\ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 88 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016017s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016084s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000266s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000305s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000521s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000560s ]
+
+[ 2015-12-28T20:30:38+08:00 ] 127.0.0.1 /Test/ohana-php/home/article/list/custom_menu.xml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000363s ]
+NOTIC: [8] Use of undefined constant URL_ROUTER_ON - assumed 'URL_ROUTER_ON' G:\code\Test\ohana-php\Application\Home\Conf\config.php 第 6 行.
+NOTIC: [8] Use of undefined constant URL_ROUTE_RULES - assumed 'URL_ROUTE_RULES' G:\code\Test\ohana-php\Application\Home\Conf\config.php 第 8 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000629s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000686s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+NOTIC: [8] Undefined variable: title G:\code\Test\ohana-php\Application\Runtime\Cache\Home\ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 5 行.
+NOTIC: [8] Undefined variable: navigation G:\code\Test\ohana-php\Application\Runtime\Cache\Home\ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 24 行.
+NOTIC: [8] Undefined variable: articleList G:\code\Test\ohana-php\Application\Runtime\Cache\Home\ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 34 行.
+NOTIC: [8] Undefined variable: page G:\code\Test\ohana-php\Application\Runtime\Cache\Home\ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 48 行.
+NOTIC: [8] Undefined variable: article G:\code\Test\ohana-php\Application\Runtime\Cache\Home\ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 51 行.
+NOTIC: [8] Undefined variable: page G:\code\Test\ohana-php\Application\Runtime\Cache\Home\ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 51 行.
+NOTIC: [8] Undefined variable: page G:\code\Test\ohana-php\Application\Runtime\Cache\Home\ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 53 行.
+NOTIC: [8] Undefined variable: page G:\code\Test\ohana-php\Application\Runtime\Cache\Home\ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 60 行.
+NOTIC: [8] Undefined variable: page G:\code\Test\ohana-php\Application\Runtime\Cache\Home\ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 60 行.
+NOTIC: [8] Undefined variable: navigation G:\code\Test\ohana-php\Application\Runtime\Cache\Home\ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 85 行.
+NOTIC: [8] Undefined variable: lastArticle G:\code\Test\ohana-php\Application\Runtime\Cache\Home\ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 97 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020307s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000410s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000832s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001296s ]
+
+[ 2015-12-28T20:30:41+08:00 ] 127.0.0.1 /Test/ohana-php/index.php/Home/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000580s ]
+NOTIC: [8] Use of undefined constant URL_ROUTER_ON - assumed 'URL_ROUTER_ON' G:\code\Test\ohana-php\Application\Home\Conf\config.php 第 6 行.
+NOTIC: [8] Use of undefined constant URL_ROUTE_RULES - assumed 'URL_ROUTE_RULES' G:\code\Test\ohana-php\Application\Home\Conf\config.php 第 8 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000699s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000768s ]
+SQL: SHOW COLUMNS FROM `ohana_category` [ RunTime:0.007258s ]
+SQL: SELECT * FROM `ohana_category` ORDER BY  cre_time desc  [ RunTime:0.004779s ]
+SQL: SHOW COLUMNS FROM `ohana_article` [ RunTime:0.008418s ]
+SQL: SELECT * FROM `ohana_article` ORDER BY post_time DESC LIMIT 6   [ RunTime:0.004586s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+NOTIC: [8] Undefined index: children: G:\code\Test\ohana-php\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 111 行.
+NOTIC: [8] Undefined index: children: G:\code\Test\ohana-php\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 111 行.
+NOTIC: [8] Undefined index: children: G:\code\Test\ohana-php\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 111 行.
+NOTIC: [8] Undefined index: children: G:\code\Test\ohana-php\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 111 行.
+NOTIC: [8] Undefined index: children: G:\code\Test\ohana-php\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 111 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013522s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000485s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000563s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002347s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002515s ]
+
+[ 2015-12-28T20:30:41+08:00 ] 127.0.0.1 /Test/ohana-php/index.php/Home/index/custom_menu.xml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000544s ]
+NOTIC: [8] Use of undefined constant URL_ROUTER_ON - assumed 'URL_ROUTER_ON' G:\code\Test\ohana-php\Application\Home\Conf\config.php 第 6 行.
+NOTIC: [8] Use of undefined constant URL_ROUTE_RULES - assumed 'URL_ROUTE_RULES' G:\code\Test\ohana-php\Application\Home\Conf\config.php 第 8 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000702s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000769s ]
+ERR: 非法操作:custom_menu.xml
+
+[ 2015-12-28T20:30:42+08:00 ] 127.0.0.1 /Test/ohana-php/index.php/Home/guestBook/guestBook.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000502s ]
+NOTIC: [8] Use of undefined constant URL_ROUTER_ON - assumed 'URL_ROUTER_ON' G:\code\Test\ohana-php\Application\Home\Conf\config.php 第 6 行.
+NOTIC: [8] Use of undefined constant URL_ROUTE_RULES - assumed 'URL_ROUTE_RULES' G:\code\Test\ohana-php\Application\Home\Conf\config.php 第 8 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001114s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001249s ]
+SQL: SHOW COLUMNS FROM `ohana_category` [ RunTime:0.008318s ]
+SQL: SELECT * FROM `ohana_category` ORDER BY  cre_time desc  [ RunTime:0.004533s ]
+SQL: SHOW COLUMNS FROM `ohana_article` [ RunTime:0.009038s ]
+SQL: SELECT * FROM `ohana_article` ORDER BY post_time DESC LIMIT 6   [ RunTime:0.004697s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000178s ]
+NOTIC: [8] Undefined index: children: G:\code\Test\ohana-php\Application\Runtime\Cache\Home\1eb6099296d4b9ca3676d9e43a132f40.php 第 51 行.
+NOTIC: [8] Undefined index: children: G:\code\Test\ohana-php\Application\Runtime\Cache\Home\1eb6099296d4b9ca3676d9e43a132f40.php 第 51 行.
+NOTIC: [8] Undefined index: children: G:\code\Test\ohana-php\Application\Runtime\Cache\Home\1eb6099296d4b9ca3676d9e43a132f40.php 第 51 行.
+NOTIC: [8] Undefined index: children: G:\code\Test\ohana-php\Application\Runtime\Cache\Home\1eb6099296d4b9ca3676d9e43a132f40.php 第 51 行.
+NOTIC: [8] Undefined index: children: G:\code\Test\ohana-php\Application\Runtime\Cache\Home\1eb6099296d4b9ca3676d9e43a132f40.php 第 51 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.064439s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064563s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000560s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000637s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001504s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001595s ]
+
+[ 2015-12-28T20:30:43+08:00 ] 127.0.0.1 /Test/ohana-php/index.php/Home/guestBook/custom_menu.xml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000579s ]
+NOTIC: [8] Use of undefined constant URL_ROUTER_ON - assumed 'URL_ROUTER_ON' G:\code\Test\ohana-php\Application\Home\Conf\config.php 第 6 行.
+NOTIC: [8] Use of undefined constant URL_ROUTE_RULES - assumed 'URL_ROUTE_RULES' G:\code\Test\ohana-php\Application\Home\Conf\config.php 第 8 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000616s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000671s ]
+ERR: 非法操作:custom_menu.xml
+
+[ 2015-12-28T20:30:47+08:00 ] 127.0.0.1 /Test/ohana-php/home/article/list/49
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000773s ]
+NOTIC: [8] Use of undefined constant URL_ROUTER_ON - assumed 'URL_ROUTER_ON' G:\code\Test\ohana-php\Application\Home\Conf\config.php 第 6 行.
+NOTIC: [8] Use of undefined constant URL_ROUTE_RULES - assumed 'URL_ROUTE_RULES' G:\code\Test\ohana-php\Application\Home\Conf\config.php 第 8 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000587s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000642s ]
+SQL: SHOW COLUMNS FROM `ohana_category` [ RunTime:0.008522s ]
+SQL: SELECT * FROM `ohana_category` ORDER BY  cre_time desc  [ RunTime:0.004541s ]
+SQL: SHOW COLUMNS FROM `ohana_article` [ RunTime:0.007768s ]
+SQL: SELECT * FROM `ohana_article` ORDER BY post_time DESC LIMIT 6   [ RunTime:0.004563s ]
+SQL: SELECT * FROM `ohana_category` WHERE `id` = 49 LIMIT 1   [ RunTime:0.000290s ]
+SQL: SHOW COLUMNS FROM `ohana_article` [ RunTime:0.008144s ]
+SQL: SELECT * FROM `ohana_article` WHERE `cid` = 49 ORDER BY post_time DESC LIMIT 0,2   [ RunTime:0.004233s ]
+SQL: SELECT count(id) as total_count FROM `ohana_article` WHERE `cid` = 49 LIMIT 1   [ RunTime:0.000458s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000146s ]
+NOTIC: [8] Undefined index: children: G:\code\Test\ohana-php\Application\Runtime\Cache\Home\ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 88 行.
+NOTIC: [8] Undefined index: children: G:\code\Test\ohana-php\Application\Runtime\Cache\Home\ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 88 行.
+NOTIC: [8] Undefined index: children: G:\code\Test\ohana-php\Application\Runtime\Cache\Home\ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 88 行.
+NOTIC: [8] Undefined index: children: G:\code\Test\ohana-php\Application\Runtime\Cache\Home\ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 88 行.
+NOTIC: [8] Undefined index: children: G:\code\Test\ohana-php\Application\Runtime\Cache\Home\ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 88 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016156s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016288s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000504s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000567s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000963s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001037s ]
+
+[ 2015-12-28T20:30:47+08:00 ] 127.0.0.1 /Test/ohana-php/home/article/list/custom_menu.xml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000583s ]
+NOTIC: [8] Use of undefined constant URL_ROUTER_ON - assumed 'URL_ROUTER_ON' G:\code\Test\ohana-php\Application\Home\Conf\config.php 第 6 行.
+NOTIC: [8] Use of undefined constant URL_ROUTE_RULES - assumed 'URL_ROUTE_RULES' G:\code\Test\ohana-php\Application\Home\Conf\config.php 第 8 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000592s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000664s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
+NOTIC: [8] Undefined variable: title G:\code\Test\ohana-php\Application\Runtime\Cache\Home\ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 5 行.
+NOTIC: [8] Undefined variable: navigation G:\code\Test\ohana-php\Application\Runtime\Cache\Home\ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 24 行.
+NOTIC: [8] Undefined variable: articleList G:\code\Test\ohana-php\Application\Runtime\Cache\Home\ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 34 行.
+NOTIC: [8] Undefined variable: page G:\code\Test\ohana-php\Application\Runtime\Cache\Home\ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 48 行.
+NOTIC: [8] Undefined variable: article G:\code\Test\ohana-php\Application\Runtime\Cache\Home\ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 51 行.
+NOTIC: [8] Undefined variable: page G:\code\Test\ohana-php\Application\Runtime\Cache\Home\ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 51 行.
+NOTIC: [8] Undefined variable: page G:\code\Test\ohana-php\Application\Runtime\Cache\Home\ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 53 行.
+NOTIC: [8] Undefined variable: page G:\code\Test\ohana-php\Application\Runtime\Cache\Home\ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 60 行.
+NOTIC: [8] Undefined variable: page G:\code\Test\ohana-php\Application\Runtime\Cache\Home\ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 60 行.
+NOTIC: [8] Undefined variable: navigation G:\code\Test\ohana-php\Application\Runtime\Cache\Home\ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 85 行.
+NOTIC: [8] Undefined variable: lastArticle G:\code\Test\ohana-php\Application\Runtime\Cache\Home\ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 97 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014802s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014862s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000631s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000684s ]
+
+[ 2015-12-28T20:30:48+08:00 ] 127.0.0.1 /Test/ohana-php/home/article/list/48
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000628s ]
+NOTIC: [8] Use of undefined constant URL_ROUTER_ON - assumed 'URL_ROUTER_ON' G:\code\Test\ohana-php\Application\Home\Conf\config.php 第 6 行.
+NOTIC: [8] Use of undefined constant URL_ROUTE_RULES - assumed 'URL_ROUTE_RULES' G:\code\Test\ohana-php\Application\Home\Conf\config.php 第 8 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000985s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001079s ]
+SQL: SHOW COLUMNS FROM `ohana_category` [ RunTime:0.007446s ]
+SQL: SELECT * FROM `ohana_category` ORDER BY  cre_time desc  [ RunTime:0.003911s ]
+SQL: SHOW COLUMNS FROM `ohana_article` [ RunTime:0.008502s ]
+SQL: SELECT * FROM `ohana_article` ORDER BY post_time DESC LIMIT 6   [ RunTime:0.005312s ]
+SQL: SELECT * FROM `ohana_category` WHERE `id` = 48 LIMIT 1   [ RunTime:0.000212s ]
+SQL: SHOW COLUMNS FROM `ohana_article` [ RunTime:0.008639s ]
+SQL: SELECT * FROM `ohana_article` WHERE `cid` = 48 ORDER BY post_time DESC LIMIT 0,2   [ RunTime:0.005962s ]
+SQL: SELECT count(id) as total_count FROM `ohana_article` WHERE `cid` = 48 LIMIT 1   [ RunTime:0.000194s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+NOTIC: [8] Undefined index: children: G:\code\Test\ohana-php\Application\Runtime\Cache\Home\ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 88 行.
+NOTIC: [8] Undefined index: children: G:\code\Test\ohana-php\Application\Runtime\Cache\Home\ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 88 行.
+NOTIC: [8] Undefined index: children: G:\code\Test\ohana-php\Application\Runtime\Cache\Home\ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 88 行.
+NOTIC: [8] Undefined index: children: G:\code\Test\ohana-php\Application\Runtime\Cache\Home\ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 88 行.
+NOTIC: [8] Undefined index: children: G:\code\Test\ohana-php\Application\Runtime\Cache\Home\ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 88 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020310s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020426s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000354s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000619s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000675s ]
+
+[ 2015-12-28T20:30:49+08:00 ] 127.0.0.1 /Test/ohana-php/home/article/list/custom_menu.xml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000483s ]
+NOTIC: [8] Use of undefined constant URL_ROUTER_ON - assumed 'URL_ROUTER_ON' G:\code\Test\ohana-php\Application\Home\Conf\config.php 第 6 行.
+NOTIC: [8] Use of undefined constant URL_ROUTE_RULES - assumed 'URL_ROUTE_RULES' G:\code\Test\ohana-php\Application\Home\Conf\config.php 第 8 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000690s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000753s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+NOTIC: [8] Undefined variable: title G:\code\Test\ohana-php\Application\Runtime\Cache\Home\ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 5 行.
+NOTIC: [8] Undefined variable: navigation G:\code\Test\ohana-php\Application\Runtime\Cache\Home\ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 24 行.
+NOTIC: [8] Undefined variable: articleList G:\code\Test\ohana-php\Application\Runtime\Cache\Home\ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 34 行.
+NOTIC: [8] Undefined variable: page G:\code\Test\ohana-php\Application\Runtime\Cache\Home\ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 48 行.
+NOTIC: [8] Undefined variable: article G:\code\Test\ohana-php\Application\Runtime\Cache\Home\ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 51 行.
+NOTIC: [8] Undefined variable: page G:\code\Test\ohana-php\Application\Runtime\Cache\Home\ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 51 行.
+NOTIC: [8] Undefined variable: page G:\code\Test\ohana-php\Application\Runtime\Cache\Home\ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 53 行.
+NOTIC: [8] Undefined variable: page G:\code\Test\ohana-php\Application\Runtime\Cache\Home\ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 60 行.
+NOTIC: [8] Undefined variable: page G:\code\Test\ohana-php\Application\Runtime\Cache\Home\ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 60 行.
+NOTIC: [8] Undefined variable: navigation G:\code\Test\ohana-php\Application\Runtime\Cache\Home\ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 85 行.
+NOTIC: [8] Undefined variable: lastArticle G:\code\Test\ohana-php\Application\Runtime\Cache\Home\ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 97 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014603s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014672s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000427s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000477s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000636s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000695s ]
+
+[ 2015-12-28T20:30:50+08:00 ] 127.0.0.1 /Test/ohana-php/home/article/list/47
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000423s ]
+NOTIC: [8] Use of undefined constant URL_ROUTER_ON - assumed 'URL_ROUTER_ON' G:\code\Test\ohana-php\Application\Home\Conf\config.php 第 6 行.
+NOTIC: [8] Use of undefined constant URL_ROUTE_RULES - assumed 'URL_ROUTE_RULES' G:\code\Test\ohana-php\Application\Home\Conf\config.php 第 8 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000595s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000653s ]
+SQL: SHOW COLUMNS FROM `ohana_category` [ RunTime:0.008977s ]
+SQL: SELECT * FROM `ohana_category` ORDER BY  cre_time desc  [ RunTime:0.004142s ]
+SQL: SHOW COLUMNS FROM `ohana_article` [ RunTime:0.006912s ]
+SQL: SELECT * FROM `ohana_article` ORDER BY post_time DESC LIMIT 6   [ RunTime:0.005405s ]
+SQL: SELECT * FROM `ohana_category` WHERE `id` = 47 LIMIT 1   [ RunTime:0.000879s ]
+SQL: SHOW COLUMNS FROM `ohana_article` [ RunTime:0.007857s ]
+SQL: SELECT * FROM `ohana_article` WHERE `cid` = 47 ORDER BY post_time DESC LIMIT 0,2   [ RunTime:0.005042s ]
+SQL: SELECT count(id) as total_count FROM `ohana_article` WHERE `cid` = 47 LIMIT 1   [ RunTime:0.000244s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000139s ]
+NOTIC: [8] Undefined index: children: G:\code\Test\ohana-php\Application\Runtime\Cache\Home\ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 88 行.
+NOTIC: [8] Undefined index: children: G:\code\Test\ohana-php\Application\Runtime\Cache\Home\ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 88 行.
+NOTIC: [8] Undefined index: children: G:\code\Test\ohana-php\Application\Runtime\Cache\Home\ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 88 行.
+NOTIC: [8] Undefined index: children: G:\code\Test\ohana-php\Application\Runtime\Cache\Home\ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 88 行.
+NOTIC: [8] Undefined index: children: G:\code\Test\ohana-php\Application\Runtime\Cache\Home\ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 88 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013568s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013667s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000601s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000682s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000945s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001017s ]
+
+[ 2015-12-28T20:30:50+08:00 ] 127.0.0.1 /Test/ohana-php/home/article/list/custom_menu.xml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000551s ]
+NOTIC: [8] Use of undefined constant URL_ROUTER_ON - assumed 'URL_ROUTER_ON' G:\code\Test\ohana-php\Application\Home\Conf\config.php 第 6 行.
+NOTIC: [8] Use of undefined constant URL_ROUTE_RULES - assumed 'URL_ROUTE_RULES' G:\code\Test\ohana-php\Application\Home\Conf\config.php 第 8 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000809s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000889s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000192s ]
+NOTIC: [8] Undefined variable: title G:\code\Test\ohana-php\Application\Runtime\Cache\Home\ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 5 行.
+NOTIC: [8] Undefined variable: navigation G:\code\Test\ohana-php\Application\Runtime\Cache\Home\ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 24 行.
+NOTIC: [8] Undefined variable: articleList G:\code\Test\ohana-php\Application\Runtime\Cache\Home\ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 34 行.
+NOTIC: [8] Undefined variable: page G:\code\Test\ohana-php\Application\Runtime\Cache\Home\ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 48 行.
+NOTIC: [8] Undefined variable: article G:\code\Test\ohana-php\Application\Runtime\Cache\Home\ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 51 行.
+NOTIC: [8] Undefined variable: page G:\code\Test\ohana-php\Application\Runtime\Cache\Home\ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 51 行.
+NOTIC: [8] Undefined variable: page G:\code\Test\ohana-php\Application\Runtime\Cache\Home\ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 53 行.
+NOTIC: [8] Undefined variable: page G:\code\Test\ohana-php\Application\Runtime\Cache\Home\ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 60 行.
+NOTIC: [8] Undefined variable: page G:\code\Test\ohana-php\Application\Runtime\Cache\Home\ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 60 行.
+NOTIC: [8] Undefined variable: navigation G:\code\Test\ohana-php\Application\Runtime\Cache\Home\ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 85 行.
+NOTIC: [8] Undefined variable: lastArticle G:\code\Test\ohana-php\Application\Runtime\Cache\Home\ff8d2e9a08e5b8bee21d40e9b5c7e8b2.php 第 97 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021355s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000860s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000979s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001186s ]
+
+[ 2015-12-28T20:30:51+08:00 ] 127.0.0.1 /Test/ohana-php/index.php/Home/guestBook/guestBook.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000477s ]
+NOTIC: [8] Use of undefined constant URL_ROUTER_ON - assumed 'URL_ROUTER_ON' G:\code\Test\ohana-php\Application\Home\Conf\config.php 第 6 行.
+NOTIC: [8] Use of undefined constant URL_ROUTE_RULES - assumed 'URL_ROUTE_RULES' G:\code\Test\ohana-php\Application\Home\Conf\config.php 第 8 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000582s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000634s ]
+SQL: SHOW COLUMNS FROM `ohana_category` [ RunTime:0.009882s ]
+SQL: SELECT * FROM `ohana_category` ORDER BY  cre_time desc  [ RunTime:0.004722s ]
+SQL: SHOW COLUMNS FROM `ohana_article` [ RunTime:0.008508s ]
+SQL: SELECT * FROM `ohana_article` ORDER BY post_time DESC LIMIT 6   [ RunTime:0.004779s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+NOTIC: [8] Undefined index: children: G:\code\Test\ohana-php\Application\Runtime\Cache\Home\1eb6099296d4b9ca3676d9e43a132f40.php 第 51 行.
+NOTIC: [8] Undefined index: children: G:\code\Test\ohana-php\Application\Runtime\Cache\Home\1eb6099296d4b9ca3676d9e43a132f40.php 第 51 行.
+NOTIC: [8] Undefined index: children: G:\code\Test\ohana-php\Application\Runtime\Cache\Home\1eb6099296d4b9ca3676d9e43a132f40.php 第 51 行.
+NOTIC: [8] Undefined index: children: G:\code\Test\ohana-php\Application\Runtime\Cache\Home\1eb6099296d4b9ca3676d9e43a132f40.php 第 51 行.
+NOTIC: [8] Undefined index: children: G:\code\Test\ohana-php\Application\Runtime\Cache\Home\1eb6099296d4b9ca3676d9e43a132f40.php 第 51 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011755s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011821s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000321s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000515s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000553s ]
+
+[ 2015-12-28T20:30:52+08:00 ] 127.0.0.1 /Test/ohana-php/index.php/Home/guestBook/custom_menu.xml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000714s ]
+NOTIC: [8] Use of undefined constant URL_ROUTER_ON - assumed 'URL_ROUTER_ON' G:\code\Test\ohana-php\Application\Home\Conf\config.php 第 6 行.
+NOTIC: [8] Use of undefined constant URL_ROUTE_RULES - assumed 'URL_ROUTE_RULES' G:\code\Test\ohana-php\Application\Home\Conf\config.php 第 8 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000862s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000945s ]
+ERR: 非法操作:custom_menu.xml
+

@@ -25,7 +25,7 @@ class CLIOptionsHandler {
         case 'r':
         case 'require':
           $this->_handleRequire($boris, $value);
-          break;
+        break;
 
         /*
          * Show Usage info
@@ -33,7 +33,7 @@ class CLIOptionsHandler {
         case 'h':
         case 'help':
           $this->_handleUsageInfo();
-          break;
+        break;
 
         /*
          * Show version
@@ -41,7 +41,7 @@ class CLIOptionsHandler {
         case 'v':
         case 'version':
           $this->_handleVersion();
-          break;
+        break;
       }
     }
   }
@@ -50,15 +50,13 @@ class CLIOptionsHandler {
 
   private function _handleRequire($boris, $paths) {
     $require = array_reduce(
-      (array)$paths,
-      function ($acc, $v) {
-        return array_merge($acc, explode(',', $v));
-      },
+      (array) $paths,
+      function($acc, $v) { return array_merge($acc, explode(',', $v)); },
       array()
     );
 
-    $boris->onStart(function ($worker, $scope) use ($require) {
-      foreach ($require as $path) {
+    $boris->onStart(function($worker, $scope) use($require) {
+      foreach($require as $path) {
         require $path;
       }
 

@@ -1,0 +1,491 @@
+[ 2015-03-19T20:32:38+08:00 ] 127.0.0.1 /Test/ohana-php/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.022099s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.022269s ]
+SQL: SHOW COLUMNS FROM `ohana_category` [ RunTime:0.012941s ]
+SQL: SELECT * FROM `ohana_category` ORDER BY  cre_time desc  [ RunTime:0.006850s ]
+SQL: SHOW COLUMNS FROM `ohana_article` [ RunTime:0.005595s ]
+SQL: SELECT * FROM `ohana_article` ORDER BY post_time DESC LIMIT 6   [ RunTime:0.005156s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 110 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 110 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 110 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 108 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 110 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 110 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 110 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.264729s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.264808s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.034882s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.034983s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.023858s ]
+INFO: [ app_end ] --END-- [ RunTime:0.024023s ]
+
+[ 2015-03-19T20:32:42+08:00 ] 127.0.0.1 /Test/ohana-php/index.php/Home/articleList/articleList/id/49
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000530s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000760s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000820s ]
+SQL: SHOW COLUMNS FROM `ohana_category` [ RunTime:0.004325s ]
+SQL: SELECT * FROM `ohana_category` ORDER BY  cre_time desc  [ RunTime:0.005867s ]
+SQL: SHOW COLUMNS FROM `ohana_article` [ RunTime:0.002793s ]
+SQL: SELECT * FROM `ohana_article` ORDER BY post_time DESC LIMIT 6   [ RunTime:0.006179s ]
+SQL: SELECT * FROM `ohana_category` WHERE `id` = 49 LIMIT 1   [ RunTime:0.000334s ]
+SQL: SHOW COLUMNS FROM `ohana_article` [ RunTime:0.002953s ]
+SQL: SELECT * FROM `ohana_article` WHERE `cid` = 49 ORDER BY post_time DESC LIMIT 0,2   [ RunTime:0.003518s ]
+SQL: SELECT count(id) as total_count FROM `ohana_article` WHERE `cid` = 49 LIMIT 1   [ RunTime:0.000271s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\d041485e0c3fbe088c11fb44aeb3c4e1.php 第 84 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\d041485e0c3fbe088c11fb44aeb3c4e1.php 第 84 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\d041485e0c3fbe088c11fb44aeb3c4e1.php 第 84 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\d041485e0c3fbe088c11fb44aeb3c4e1.php 第 82 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\d041485e0c3fbe088c11fb44aeb3c4e1.php 第 84 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\d041485e0c3fbe088c11fb44aeb3c4e1.php 第 84 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\d041485e0c3fbe088c11fb44aeb3c4e1.php 第 84 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059586s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059761s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001156s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001249s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000921s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000974s ]
+
+[ 2015-03-19T20:32:42+08:00 ] 127.0.0.1 /Test/ohana-php/index.php/Home/articleList/articleList/id/custom_menu.xml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000451s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000746s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000799s ]
+SQL: SHOW COLUMNS FROM `ohana_category` [ RunTime:0.002372s ]
+SQL: SELECT * FROM `ohana_category` ORDER BY  cre_time desc  [ RunTime:0.003815s ]
+SQL: SHOW COLUMNS FROM `ohana_article` [ RunTime:0.002254s ]
+SQL: SELECT * FROM `ohana_article` ORDER BY post_time DESC LIMIT 6   [ RunTime:0.003224s ]
+SQL: SELECT * FROM `ohana_category` WHERE `id` = 0 LIMIT 1   [ RunTime:0.000326s ]
+SQL: SHOW COLUMNS FROM `ohana_article` [ RunTime:0.003308s ]
+SQL: SELECT * FROM `ohana_article` WHERE `cid` = 0 ORDER BY post_time DESC LIMIT 0,2   [ RunTime:0.004405s ]
+SQL: SELECT count(id) as total_count FROM `ohana_article` WHERE `cid` = 0 LIMIT 1   [ RunTime:0.000276s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000135s ]
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\d041485e0c3fbe088c11fb44aeb3c4e1.php 第 84 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\d041485e0c3fbe088c11fb44aeb3c4e1.php 第 84 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\d041485e0c3fbe088c11fb44aeb3c4e1.php 第 84 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\d041485e0c3fbe088c11fb44aeb3c4e1.php 第 82 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\d041485e0c3fbe088c11fb44aeb3c4e1.php 第 84 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\d041485e0c3fbe088c11fb44aeb3c4e1.php 第 84 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\d041485e0c3fbe088c11fb44aeb3c4e1.php 第 84 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036802s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036854s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000373s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000560s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000598s ]
+
+[ 2015-03-19T20:32:44+08:00 ] 127.0.0.1 /Test/ohana-php/index.php/Home/article/article/id/24
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000443s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000621s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000673s ]
+SQL: SHOW COLUMNS FROM `ohana_category` [ RunTime:0.004728s ]
+SQL: SELECT * FROM `ohana_category` ORDER BY  cre_time desc  [ RunTime:0.005007s ]
+SQL: SHOW COLUMNS FROM `ohana_article` [ RunTime:0.002755s ]
+SQL: SELECT * FROM `ohana_article` ORDER BY post_time DESC LIMIT 6   [ RunTime:0.004769s ]
+SQL: SELECT * FROM `ohana_article` WHERE `id` = 24  [ RunTime:0.000412s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\37d23b8de8b1006eeb4dee5f594561fd.php 第 76 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\37d23b8de8b1006eeb4dee5f594561fd.php 第 76 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\37d23b8de8b1006eeb4dee5f594561fd.php 第 76 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\37d23b8de8b1006eeb4dee5f594561fd.php 第 74 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\37d23b8de8b1006eeb4dee5f594561fd.php 第 76 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\37d23b8de8b1006eeb4dee5f594561fd.php 第 76 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\37d23b8de8b1006eeb4dee5f594561fd.php 第 76 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061862s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061953s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000248s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000560s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000603s ]
+
+[ 2015-03-19T20:32:44+08:00 ] 127.0.0.1 /Test/ohana-php/index.php/Home/article/article/id/custom_menu.xml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000520s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000571s ]
+SQL: SHOW COLUMNS FROM `ohana_category` [ RunTime:0.002599s ]
+SQL: SELECT * FROM `ohana_category` ORDER BY  cre_time desc  [ RunTime:0.004906s ]
+SQL: SHOW COLUMNS FROM `ohana_article` [ RunTime:0.003068s ]
+SQL: SELECT * FROM `ohana_article` ORDER BY post_time DESC LIMIT 6   [ RunTime:0.003578s ]
+SQL: SELECT * FROM `ohana_article` WHERE `id` = 0  [ RunTime:0.000344s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000365s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000468s ]
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\37d23b8de8b1006eeb4dee5f594561fd.php 第 76 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\37d23b8de8b1006eeb4dee5f594561fd.php 第 76 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\37d23b8de8b1006eeb4dee5f594561fd.php 第 76 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\37d23b8de8b1006eeb4dee5f594561fd.php 第 74 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\37d23b8de8b1006eeb4dee5f594561fd.php 第 76 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\37d23b8de8b1006eeb4dee5f594561fd.php 第 76 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\37d23b8de8b1006eeb4dee5f594561fd.php 第 76 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049178s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049242s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000256s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000542s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000580s ]
+
+[ 2015-03-19T20:32:47+08:00 ] 127.0.0.1 /Test/ohana-php/index.php/Home/articleList/articleList/id/47
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000483s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000536s ]
+SQL: SHOW COLUMNS FROM `ohana_category` [ RunTime:0.004221s ]
+SQL: SELECT * FROM `ohana_category` ORDER BY  cre_time desc  [ RunTime:0.006740s ]
+SQL: SHOW COLUMNS FROM `ohana_article` [ RunTime:0.002331s ]
+SQL: SELECT * FROM `ohana_article` ORDER BY post_time DESC LIMIT 6   [ RunTime:0.006264s ]
+SQL: SELECT * FROM `ohana_category` WHERE `id` = 47 LIMIT 1   [ RunTime:0.000322s ]
+SQL: SHOW COLUMNS FROM `ohana_article` [ RunTime:0.003800s ]
+SQL: SELECT * FROM `ohana_article` WHERE `cid` = 47 ORDER BY post_time DESC LIMIT 0,2   [ RunTime:0.004034s ]
+SQL: SELECT count(id) as total_count FROM `ohana_article` WHERE `cid` = 47 LIMIT 1   [ RunTime:0.000228s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000167s ]
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\d041485e0c3fbe088c11fb44aeb3c4e1.php 第 84 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\d041485e0c3fbe088c11fb44aeb3c4e1.php 第 84 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\d041485e0c3fbe088c11fb44aeb3c4e1.php 第 84 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\d041485e0c3fbe088c11fb44aeb3c4e1.php 第 82 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\d041485e0c3fbe088c11fb44aeb3c4e1.php 第 84 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\d041485e0c3fbe088c11fb44aeb3c4e1.php 第 84 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\d041485e0c3fbe088c11fb44aeb3c4e1.php 第 84 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042136s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042210s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000383s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000435s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000512s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000548s ]
+
+[ 2015-03-19T20:32:47+08:00 ] 127.0.0.1 /Test/ohana-php/index.php/Home/articleList/articleList/id/custom_menu.xml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000417s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000504s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000547s ]
+SQL: SHOW COLUMNS FROM `ohana_category` [ RunTime:0.003677s ]
+SQL: SELECT * FROM `ohana_category` ORDER BY  cre_time desc  [ RunTime:0.004827s ]
+SQL: SHOW COLUMNS FROM `ohana_article` [ RunTime:0.002038s ]
+SQL: SELECT * FROM `ohana_article` ORDER BY post_time DESC LIMIT 6   [ RunTime:0.004723s ]
+SQL: SELECT * FROM `ohana_category` WHERE `id` = 0 LIMIT 1   [ RunTime:0.000135s ]
+SQL: SHOW COLUMNS FROM `ohana_article` [ RunTime:0.001969s ]
+SQL: SELECT * FROM `ohana_article` WHERE `cid` = 0 ORDER BY post_time DESC LIMIT 0,2   [ RunTime:0.002872s ]
+SQL: SELECT count(id) as total_count FROM `ohana_article` WHERE `cid` = 0 LIMIT 1   [ RunTime:0.000115s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000184s ]
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\d041485e0c3fbe088c11fb44aeb3c4e1.php 第 84 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\d041485e0c3fbe088c11fb44aeb3c4e1.php 第 84 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\d041485e0c3fbe088c11fb44aeb3c4e1.php 第 84 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\d041485e0c3fbe088c11fb44aeb3c4e1.php 第 82 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\d041485e0c3fbe088c11fb44aeb3c4e1.php 第 84 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\d041485e0c3fbe088c11fb44aeb3c4e1.php 第 84 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\d041485e0c3fbe088c11fb44aeb3c4e1.php 第 84 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036887s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036934s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000275s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000311s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000551s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000587s ]
+
+[ 2015-03-19T20:32:49+08:00 ] 127.0.0.1 /Test/ohana-php/index.php/Home/article/article/id/25
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000440s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000737s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000806s ]
+SQL: SHOW COLUMNS FROM `ohana_category` [ RunTime:0.004643s ]
+SQL: SELECT * FROM `ohana_category` ORDER BY  cre_time desc  [ RunTime:0.006265s ]
+SQL: SHOW COLUMNS FROM `ohana_article` [ RunTime:0.002702s ]
+SQL: SELECT * FROM `ohana_article` ORDER BY post_time DESC LIMIT 6   [ RunTime:0.005659s ]
+SQL: SELECT * FROM `ohana_article` WHERE `id` = 25  [ RunTime:0.000480s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\37d23b8de8b1006eeb4dee5f594561fd.php 第 76 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\37d23b8de8b1006eeb4dee5f594561fd.php 第 76 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\37d23b8de8b1006eeb4dee5f594561fd.php 第 76 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\37d23b8de8b1006eeb4dee5f594561fd.php 第 74 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\37d23b8de8b1006eeb4dee5f594561fd.php 第 76 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\37d23b8de8b1006eeb4dee5f594561fd.php 第 76 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\37d23b8de8b1006eeb4dee5f594561fd.php 第 76 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044428s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044496s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000316s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000771s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000849s ]
+
+[ 2015-03-19T20:32:49+08:00 ] 127.0.0.1 /Test/ohana-php/index.php/Home/article/article/id/custom_menu.xml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000473s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000524s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000576s ]
+SQL: SHOW COLUMNS FROM `ohana_category` [ RunTime:0.002753s ]
+SQL: SELECT * FROM `ohana_category` ORDER BY  cre_time desc  [ RunTime:0.003766s ]
+SQL: SHOW COLUMNS FROM `ohana_article` [ RunTime:0.002413s ]
+SQL: SELECT * FROM `ohana_article` ORDER BY post_time DESC LIMIT 6   [ RunTime:0.002879s ]
+SQL: SELECT * FROM `ohana_article` WHERE `id` = 0  [ RunTime:0.000177s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\37d23b8de8b1006eeb4dee5f594561fd.php 第 76 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\37d23b8de8b1006eeb4dee5f594561fd.php 第 76 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\37d23b8de8b1006eeb4dee5f594561fd.php 第 76 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\37d23b8de8b1006eeb4dee5f594561fd.php 第 74 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\37d23b8de8b1006eeb4dee5f594561fd.php 第 76 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\37d23b8de8b1006eeb4dee5f594561fd.php 第 76 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\37d23b8de8b1006eeb4dee5f594561fd.php 第 76 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035052s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000371s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000530s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000567s ]
+
+[ 2015-03-19T20:32:55+08:00 ] 127.0.0.1 /Test/ohana-php/index.php/Home/article/article/id/14
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000609s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000761s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000815s ]
+SQL: SHOW COLUMNS FROM `ohana_category` [ RunTime:0.003802s ]
+SQL: SELECT * FROM `ohana_category` ORDER BY  cre_time desc  [ RunTime:0.005088s ]
+SQL: SHOW COLUMNS FROM `ohana_article` [ RunTime:0.002270s ]
+SQL: SELECT * FROM `ohana_article` ORDER BY post_time DESC LIMIT 6   [ RunTime:0.005197s ]
+SQL: SELECT * FROM `ohana_article` WHERE `id` = 14  [ RunTime:0.000312s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\37d23b8de8b1006eeb4dee5f594561fd.php 第 76 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\37d23b8de8b1006eeb4dee5f594561fd.php 第 76 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\37d23b8de8b1006eeb4dee5f594561fd.php 第 76 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\37d23b8de8b1006eeb4dee5f594561fd.php 第 74 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\37d23b8de8b1006eeb4dee5f594561fd.php 第 76 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\37d23b8de8b1006eeb4dee5f594561fd.php 第 76 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\37d23b8de8b1006eeb4dee5f594561fd.php 第 76 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036741s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036803s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000397s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000442s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000826s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000893s ]
+
+[ 2015-03-19T20:32:55+08:00 ] 127.0.0.1 /Test/ohana-php/index.php/Home/article/article/id/custom_menu.xml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000448s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000516s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000560s ]
+SQL: SHOW COLUMNS FROM `ohana_category` [ RunTime:0.002232s ]
+SQL: SELECT * FROM `ohana_category` ORDER BY  cre_time desc  [ RunTime:0.003830s ]
+SQL: SHOW COLUMNS FROM `ohana_article` [ RunTime:0.002108s ]
+SQL: SELECT * FROM `ohana_article` ORDER BY post_time DESC LIMIT 6   [ RunTime:0.003031s ]
+SQL: SELECT * FROM `ohana_article` WHERE `id` = 0  [ RunTime:0.000156s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\37d23b8de8b1006eeb4dee5f594561fd.php 第 76 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\37d23b8de8b1006eeb4dee5f594561fd.php 第 76 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\37d23b8de8b1006eeb4dee5f594561fd.php 第 76 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\37d23b8de8b1006eeb4dee5f594561fd.php 第 74 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\37d23b8de8b1006eeb4dee5f594561fd.php 第 76 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\37d23b8de8b1006eeb4dee5f594561fd.php 第 76 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\37d23b8de8b1006eeb4dee5f594561fd.php 第 76 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035686s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035734s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000354s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000549s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000588s ]
+
+[ 2015-03-19T20:32:58+08:00 ] 127.0.0.1 /Test/ohana-php/index.php/Home/article/article/id/20
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000473s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000812s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000897s ]
+SQL: SHOW COLUMNS FROM `ohana_category` [ RunTime:0.005416s ]
+SQL: SELECT * FROM `ohana_category` ORDER BY  cre_time desc  [ RunTime:0.005412s ]
+SQL: SHOW COLUMNS FROM `ohana_article` [ RunTime:0.002166s ]
+SQL: SELECT * FROM `ohana_article` ORDER BY post_time DESC LIMIT 6   [ RunTime:0.004493s ]
+SQL: SELECT * FROM `ohana_article` WHERE `id` = 20  [ RunTime:0.000304s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\37d23b8de8b1006eeb4dee5f594561fd.php 第 76 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\37d23b8de8b1006eeb4dee5f594561fd.php 第 76 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\37d23b8de8b1006eeb4dee5f594561fd.php 第 76 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\37d23b8de8b1006eeb4dee5f594561fd.php 第 74 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\37d23b8de8b1006eeb4dee5f594561fd.php 第 76 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\37d23b8de8b1006eeb4dee5f594561fd.php 第 76 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\37d23b8de8b1006eeb4dee5f594561fd.php 第 76 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035655s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035723s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000495s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000531s ]
+
+[ 2015-03-19T20:32:58+08:00 ] 127.0.0.1 /Test/ohana-php/index.php/Home/article/article/id/custom_menu.xml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000389s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000534s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000579s ]
+SQL: SHOW COLUMNS FROM `ohana_category` [ RunTime:0.002222s ]
+SQL: SELECT * FROM `ohana_category` ORDER BY  cre_time desc  [ RunTime:0.004107s ]
+SQL: SHOW COLUMNS FROM `ohana_article` [ RunTime:0.001997s ]
+SQL: SELECT * FROM `ohana_article` ORDER BY post_time DESC LIMIT 6   [ RunTime:0.002892s ]
+SQL: SELECT * FROM `ohana_article` WHERE `id` = 0  [ RunTime:0.000148s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\37d23b8de8b1006eeb4dee5f594561fd.php 第 76 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\37d23b8de8b1006eeb4dee5f594561fd.php 第 76 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\37d23b8de8b1006eeb4dee5f594561fd.php 第 76 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\37d23b8de8b1006eeb4dee5f594561fd.php 第 74 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\37d23b8de8b1006eeb4dee5f594561fd.php 第 76 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\37d23b8de8b1006eeb4dee5f594561fd.php 第 76 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\37d23b8de8b1006eeb4dee5f594561fd.php 第 76 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033268s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033317s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000395s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000577s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000619s ]
+
+[ 2015-03-19T20:33:00+08:00 ] 127.0.0.1 /Test/ohana-php/index.php/Home/article/article/id/22
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000536s ]
+SQL: SHOW COLUMNS FROM `ohana_category` [ RunTime:0.006322s ]
+SQL: SELECT * FROM `ohana_category` ORDER BY  cre_time desc  [ RunTime:0.006799s ]
+SQL: SHOW COLUMNS FROM `ohana_article` [ RunTime:0.002592s ]
+SQL: SELECT * FROM `ohana_article` ORDER BY post_time DESC LIMIT 6   [ RunTime:0.005305s ]
+SQL: SELECT * FROM `ohana_article` WHERE `id` = 22  [ RunTime:0.000276s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000182s ]
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\37d23b8de8b1006eeb4dee5f594561fd.php 第 76 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\37d23b8de8b1006eeb4dee5f594561fd.php 第 76 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\37d23b8de8b1006eeb4dee5f594561fd.php 第 76 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\37d23b8de8b1006eeb4dee5f594561fd.php 第 74 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\37d23b8de8b1006eeb4dee5f594561fd.php 第 76 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\37d23b8de8b1006eeb4dee5f594561fd.php 第 76 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\37d23b8de8b1006eeb4dee5f594561fd.php 第 76 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043466s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043544s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000415s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000458s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000499s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000537s ]
+
+[ 2015-03-19T20:33:00+08:00 ] 127.0.0.1 /Test/ohana-php/index.php/Home/article/article/id/custom_menu.xml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000397s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000576s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000639s ]
+SQL: SHOW COLUMNS FROM `ohana_category` [ RunTime:0.002133s ]
+SQL: SELECT * FROM `ohana_category` ORDER BY  cre_time desc  [ RunTime:0.003813s ]
+SQL: SHOW COLUMNS FROM `ohana_article` [ RunTime:0.002197s ]
+SQL: SELECT * FROM `ohana_article` ORDER BY post_time DESC LIMIT 6   [ RunTime:0.002904s ]
+SQL: SELECT * FROM `ohana_article` WHERE `id` = 0  [ RunTime:0.000148s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\37d23b8de8b1006eeb4dee5f594561fd.php 第 76 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\37d23b8de8b1006eeb4dee5f594561fd.php 第 76 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\37d23b8de8b1006eeb4dee5f594561fd.php 第 76 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\37d23b8de8b1006eeb4dee5f594561fd.php 第 74 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\37d23b8de8b1006eeb4dee5f594561fd.php 第 76 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\37d23b8de8b1006eeb4dee5f594561fd.php 第 76 行.
+NOTIC: [8] Undefined index: children: H:\code\Test\ohana-php\Application\Runtime\Cache\Home\37d23b8de8b1006eeb4dee5f594561fd.php 第 76 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035945s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035995s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000379s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000420s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000607s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000648s ]
+
