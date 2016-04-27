@@ -51,7 +51,6 @@ $(function () {
   $('#user_name').blur(function () {
     var curName = $("#cur_name").val();
     var name = $(this).val();
-
     if(name === curName) {
       return;
     }

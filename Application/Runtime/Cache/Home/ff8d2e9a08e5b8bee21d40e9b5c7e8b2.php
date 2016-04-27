@@ -50,7 +50,7 @@
 
             <a href="/git/ohana-php/home/article/list/<?php echo ($article["cid"]); ?>/<?php echo ($page['page'] - 1); ?>">上一页</a><?php endif; ?>
         </li>
-        <?php $__FOR_START_19991__=1;$__FOR_END_19991__=$page['page_count'] + 1;for($i=$__FOR_START_19991__;$i < $__FOR_END_19991__;$i+=1){ ?><li>
+        <?php $__FOR_START_23040__=1;$__FOR_END_23040__=$page['page_count'] + 1;for($i=$__FOR_START_23040__;$i < $__FOR_END_23040__;$i+=1){ ?><li>
             <?php if($i == $page['page']): ?><span><?php echo ($page["page"]); ?></span>
               <?php else: ?>
 
@@ -85,7 +85,7 @@
         <?php if(is_array($navigation)): foreach($navigation as $k=>$nav): ?><li>
             <i class="arrow_carrot-2right" data-role="click-it"></i><a href="/git/ohana-php/home/article/list/<?php echo ($nav["id"]); ?>"><?php echo ($nav["name"]); ?>(<?php echo(count($nav['children:'])) ?>)</a>
             <ul class="child-list">
-              <?php $__FOR_START_4758__=0;$__FOR_END_4758__=count($nav['children:']);for($i=$__FOR_START_4758__;$i < $__FOR_END_4758__;$i+=1){ ?><li><a href="/git/ohana-php/home/article/list/<?php echo ($nav['children:'][$i]['id']); ?>"><?php echo ($nav['children:'][$i]['name']); ?>(<?php echo(count($nav['children:'][$i]['children:'])) ?>)</a> </li><?php } ?>
+              <?php $__FOR_START_10371__=0;$__FOR_END_10371__=count($nav['children:']);for($i=$__FOR_START_10371__;$i < $__FOR_END_10371__;$i+=1){ ?><li><a href="/git/ohana-php/home/article/list/<?php echo ($nav['children:'][$i]['id']); ?>"><?php echo ($nav['children:'][$i]['name']); ?>(<?php echo(count($nav['children:'][$i]['children:'])) ?>)</a> </li><?php } ?>
             </ul>
           </li><?php endforeach; endif; ?>
     </ul>

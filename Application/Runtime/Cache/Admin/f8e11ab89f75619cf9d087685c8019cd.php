@@ -4,14 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <title>网站设置</title>
-  <link rel="stylesheet" href="/Test/ohana-php/Public/css/bootstrap/css/bootstrap.css" />
-<link rel="stylesheet" href="/Test/ohana-php/Public/css/bootstrap/css/bootstrap-theme.css" />
-<link rel="stylesheet" href="/Test/ohana-php/Public/css/bootstrap/css/font-awesome.css" />
-<link rel="stylesheet" href="/Test/ohana-php/Public/css/uploadify.css" />
-<link rel="stylesheet" href="/Test/ohana-php/Public/css/reset.css" />
-<link rel="stylesheet" href="/Test/ohana-php/Public/css/utils.css" />
-<link rel="stylesheet" href="/Test/ohana-php/Public/css/common.css" />
-<link rel="stylesheet" href="/Test/ohana-php/Public/css/style.css" />
+  <link rel="stylesheet" href="/git/ohana-php/Public/css/bootstrap/css/bootstrap.css" />
+<link rel="stylesheet" href="/git/ohana-php/Public/css/bootstrap/css/bootstrap-theme.css" />
+<link rel="stylesheet" href="/git/ohana-php/Public/css/bootstrap/css/font-awesome.css" />
+<link rel="stylesheet" href="/git/ohana-php/Public/css/uploadify.css" />
+<link rel="stylesheet" href="/git/ohana-php/Public/css/reset.css" />
+<link rel="stylesheet" href="/git/ohana-php/Public/css/utils.css" />
+<link rel="stylesheet" href="/git/ohana-php/Public/css/common.css" />
+<link rel="stylesheet" href="/git/ohana-php/Public/css/style.css" />
 
 </head>
 
@@ -69,7 +69,7 @@
           <div class="form-group">
             <label class="control-label col-md-4">网站 Logo：</label>
             <div class="col-md-8">
-              <?php if(!empty($site['logo'])): ?><img id="logo_img" src="/Test/ohana-php/Public/upload/img/<?php echo ($site["logo"]); ?>" alt="LOGO" /><?php endif; ?>
+              <?php if(!empty($site['logo'])): ?><img id="logo_img" src="/git/ohana-php/Public/upload/img/<?php echo ($site["logo"]); ?>" alt="LOGO" /><?php endif; ?>
             </div>
           </div>
           <div class="form-group">
@@ -93,26 +93,26 @@
 
 <div class="footer">power by Phlen 2014-08-03 ：2014-08-17</div>
 </body>
-<script src="/Test/ohana-php/Public/js/lib/jquery-1.11.0.js"></script>
-<script src="/Test/ohana-php/Public/js/lib/jquery.validate.js"></script>
-<script src="/Test/ohana-php/Public/js/lib/jquery.md5.js"></script>
-<script src="/Test/ohana-php/Public/js/lib/bootstrap.js"></script>
-<script src="/Test/ohana-php/Public/js/config.js"></script>
-<script src="/Test/ohana-php/Public/js/common.js"></script>
-<script src="/Test/ohana-php/Public/js/lib/uploadify/jquery.uploadify.js"></script>
+<script src="/git/ohana-php/Public/js/lib/jquery-1.11.0.js"></script>
+<script src="/git/ohana-php/Public/js/lib/jquery.validate.js"></script>
+<script src="/git/ohana-php/Public/js/lib/jquery.md5.js"></script>
+<script src="/git/ohana-php/Public/js/lib/bootstrap.js"></script>
+<script src="/git/ohana-php/Public/js/config.js"></script>
+<script src="/git/ohana-php/Public/js/common.js"></script>
+<script src="/git/ohana-php/Public/js/lib/uploadify/jquery.uploadify.js"></script>
 <script>
   $(function() {
     $("#file1").uploadify({
       width: 80,
       height: 30,
-      swf: '/Test/ohana-php/Public/js/lib/uploadify/uploadify.swf',
+      swf: '/git/ohana-php/Public/js/lib/uploadify/uploadify.swf',
       uploader: "<?php echo U('uploadLogo');?>",
       buttonText: "上传图片",
       onUploadSuccess: function(file, data, respone) {
         var jsonData = JSON.parse(data);
         if(jsonData.status === 'ok') {
           $("input[name=logo]").val(jsonData.data);
-          $("#logo_img").attr('src', '/Test/ohana-php/Public/upload/img/' + jsonData.data);
+          $("#logo_img").attr('src', '/git/ohana-php/Public/upload/img/' + jsonData.data);
         } else {
           alert('上传失败!');
         }

@@ -4,14 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <title>编辑管理员</title>
-  <link rel="stylesheet" href="/Test/ohana-php/Public/css/bootstrap/css/bootstrap.css" />
-<link rel="stylesheet" href="/Test/ohana-php/Public/css/bootstrap/css/bootstrap-theme.css" />
-<link rel="stylesheet" href="/Test/ohana-php/Public/css/bootstrap/css/font-awesome.css" />
-<link rel="stylesheet" href="/Test/ohana-php/Public/css/uploadify.css" />
-<link rel="stylesheet" href="/Test/ohana-php/Public/css/reset.css" />
-<link rel="stylesheet" href="/Test/ohana-php/Public/css/utils.css" />
-<link rel="stylesheet" href="/Test/ohana-php/Public/css/common.css" />
-<link rel="stylesheet" href="/Test/ohana-php/Public/css/style.css" />
+  <link rel="stylesheet" href="/git/ohana-php/Public/css/bootstrap/css/bootstrap.css" />
+<link rel="stylesheet" href="/git/ohana-php/Public/css/bootstrap/css/bootstrap-theme.css" />
+<link rel="stylesheet" href="/git/ohana-php/Public/css/bootstrap/css/font-awesome.css" />
+<link rel="stylesheet" href="/git/ohana-php/Public/css/uploadify.css" />
+<link rel="stylesheet" href="/git/ohana-php/Public/css/reset.css" />
+<link rel="stylesheet" href="/git/ohana-php/Public/css/utils.css" />
+<link rel="stylesheet" href="/git/ohana-php/Public/css/common.css" />
+<link rel="stylesheet" href="/git/ohana-php/Public/css/style.css" />
 </head>
 
 <body>
@@ -84,11 +84,11 @@
 
 <div class="footer">power by Phlen 2014-08-03 ：2014-08-17</div>
 </body>
-<script src="/Test/ohana-php/Public/js/lib/jquery-1.11.0.js"></script>
-<script src="/Test/ohana-php/Public/js/lib/jquery.validate.js"></script>
-<script src="/Test/ohana-php/Public/js/lib/jquery.md5.js"></script>
-<script src="/Test/ohana-php/Public/js/lib/bootstrap.js"></script>
-<script src="/Test/ohana-php/Public/js/config.js"></script>
-<script src="/Test/ohana-php/Public/js/common.js"></script>
-<script src="/Test/ohana-php/Public/js/add_user.js"></script>
+<script src="/git/ohana-php/Public/js/lib/jquery-1.11.0.js"></script>
+<script src="/git/ohana-php/Public/js/lib/jquery.validate.js"></script>
+<script src="/git/ohana-php/Public/js/lib/jquery.md5.js"></script>
+<script src="/git/ohana-php/Public/js/lib/bootstrap.js"></script>
+<script src="/git/ohana-php/Public/js/config.js"></script>
+<script src="/git/ohana-php/Public/js/common.js"></script>
+<script src="/git/ohana-php/Public/js/add_user.js"></script>
 </html>

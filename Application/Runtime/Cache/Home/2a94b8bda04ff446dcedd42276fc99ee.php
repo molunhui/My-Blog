@@ -108,7 +108,7 @@
         <?php if(is_array($navigation)): foreach($navigation as $k=>$nav): ?><li>
             <i class="arrow_carrot-2right" data-role="click-it"></i><a href="/git/ohana-php/home/article/list/<?php echo ($nav["id"]); ?>"><?php echo ($nav["name"]); ?>(<?php echo(count($nav['children:'])) ?>)</a>
             <ul class="child-list">
-              <?php $__FOR_START_10864__=0;$__FOR_END_10864__=count($nav['children:']);for($i=$__FOR_START_10864__;$i < $__FOR_END_10864__;$i+=1){ ?><li><a href="/git/ohana-php/home/article/list/<?php echo ($nav['children:'][$i]['id']); ?>"><?php echo ($nav['children:'][$i]['name']); ?>(<?php echo(count($nav['children:'][$i]['children:'])) ?>)</a> </li><?php } ?>
+              <?php $__FOR_START_27115__=0;$__FOR_END_27115__=count($nav['children:']);for($i=$__FOR_START_27115__;$i < $__FOR_END_27115__;$i+=1){ ?><li><a href="/git/ohana-php/home/article/list/<?php echo ($nav['children:'][$i]['id']); ?>"><?php echo ($nav['children:'][$i]['name']); ?>(<?php echo(count($nav['children:'][$i]['children:'])) ?>)</a> </li><?php } ?>
             </ul>
           </li><?php endforeach; endif; ?>
     </ul>
