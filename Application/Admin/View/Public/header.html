@@ -2,6 +2,8 @@
   <span class="logo">ohana</span>
   <div class="user" id="user-menu">
     <a href="jsvascript:;">{$current_user.name}</a>
+    <input type="hidden" id="cur_user" value="{$current_user.super_admin}">
+    <input type="hidden" id="cur_id" value="{$current_user.id}">
     <ul class="user-sub-menu">
       <li><a href="{:U('user/edit', null, '')}/id/{$current_user.id}"><i class="fa fa-pencil"></i>编辑个人资料</a></li>
       <li><a href="{:U('login/unset_session')}"><i class="fa fa-sign-out"></i>退出</a></li>

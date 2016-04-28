@@ -51,12 +51,13 @@ $(function () {
   $('#user_name').blur(function () {
     var curName = $("#cur_name").val();
     var name = $(this).val();
+
     if(name === curName) {
       return;
     }
 
     $.get(Ohana.apiPath + 'check_name_exist', {
-      user_name: $(this).val()
+      user_name: $(this).val();
     }, function (data) {
       if (data) {
         if (data.isExist) {
@@ -66,16 +67,4 @@ $(function () {
     })
   })
 
-
-  /*$("#user_name").blur(function() {
-   $.get(Ohana.apiPath + 'check_user_name_exist', {
-   user_name: $(this).val()
-   }, function(data) {
-   if(data) {
-   if(data.isExist) {
-   alert('用户名已存在!');
-   }
-   }
-   });
-   });*/
 })

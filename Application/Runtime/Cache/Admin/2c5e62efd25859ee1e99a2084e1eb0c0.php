@@ -20,6 +20,8 @@
   <span class="logo">ohana</span>
   <div class="user" id="user-menu">
     <a href="jsvascript:;"><?php echo ($current_user["name"]); ?></a>
+    <input type="hidden" id="cur_user" value="<?php echo ($current_user["super_admin"]); ?>">
+    <input type="hidden" id="cur_id" value="<?php echo ($current_user["id"]); ?>">
     <ul class="user-sub-menu">
       <li><a href="<?php echo U('user/edit', null, '');?>/id/<?php echo ($current_user["id"]); ?>"><i class="fa fa-pencil"></i>编辑个人资料</a></li>
       <li><a href="<?php echo U('login/unset_session');?>"><i class="fa fa-sign-out"></i>退出</a></li>
@@ -119,7 +121,7 @@
     </div>
   </div>
 
-<div class="footer">power by Phlen 2014-08-03 ：2014-08-17</div>
+<div class="footer">power by Allen.mo</div>
 </body>
 <script src="/Test/ohana-php/Public/js/lib/jquery-1.11.0.js"></script>
 <script src="/Test/ohana-php/Public/js/lib/jquery.validate.js"></script>

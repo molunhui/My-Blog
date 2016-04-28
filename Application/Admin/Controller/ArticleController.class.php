@@ -15,7 +15,7 @@ class ArticleController extends BaseController {
     $this->display('new_article');
   }
 
-  function articleList($page = 1, $page_size = 10) {
+  function articleList($page = 1, $page_size = 5) {
     $articleModel = new ArticleModel();
     $list = $articleModel->getList($page, $page_size);
 
@@ -72,7 +72,7 @@ class ArticleController extends BaseController {
 
   function runEdit() {
     $articleModel = new ArticleModel();
-    if($articleModel->create() && $articleModel->save()){
+    if($articleModel->create() && $articleModel->edit_article()){
       $this->redirect('articleList');
     }else{
       $this->error('修改失败');

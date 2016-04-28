@@ -19,6 +19,8 @@
   <span class="logo">ohana</span>
   <div class="user" id="user-menu">
     <a href="jsvascript:;"><?php echo ($current_user["name"]); ?></a>
+    <input type="hidden" id="cur_user" value="<?php echo ($current_user["super_admin"]); ?>">
+    <input type="hidden" id="cur_id" value="<?php echo ($current_user["id"]); ?>">
     <ul class="user-sub-menu">
       <li><a href="<?php echo U('user/edit', null, '');?>/id/<?php echo ($current_user["id"]); ?>"><i class="fa fa-pencil"></i>编辑个人资料</a></li>
       <li><a href="<?php echo U('login/unset_session');?>"><i class="fa fa-sign-out"></i>退出</a></li>
@@ -71,11 +73,12 @@
                 <td class="col-md-2"><?php echo ($article["category"]); ?></td>
                 <td class="col-md-2"><?php echo (date("Y-m-d H:i", $article["post_time"])); ?></td>
                 <td class="col-md-4">
-                  <a href="<?php echo U('edit', '', '');?>/id/<?php echo ($article["id"]); ?>">编辑</a>
-                  <form action="<?php echo U('runDelete');?>" method="post">
+                  <a href="<?php echo U('edit', '', '');?>/id/<?php echo ($article["id"]); ?>" onclick="return confirm('确认修改？')">编辑</a>
+                  <form action="<?php echo U('runDelete');?>" method="post" onsubmit="return confrim('确认删除？')">
                     <input type="hidden" value="<?php echo ($article["id"]); ?>" name="id"/>
-                    <button type="submit">删除</button>
+                    <button type="submit" onclick="return confirm('确认删除？')">删除</button>
                   </form>
+                  <!-- <a href="<?php echo U('runDelete','','');?>/id/<?php echo ($article["id"]); ?>" onclick="return confirm(确认删除？)">删除</a> -->
                 </td>
               </tr><?php endforeach; endif; else: echo "" ;endif; ?>
           </tbody>
@@ -87,7 +90,7 @@
                 <?php else: ?>
                 <a href="<?php echo U('articleList', '', '');?>/page/<?php echo ($page['page'] - 1); ?>">上一页</a><?php endif; ?>
             </li>
-            <?php $__FOR_START_27115__=1;$__FOR_END_27115__=$page['page_count'] + 1;for($i=$__FOR_START_27115__;$i < $__FOR_END_27115__;$i+=1){ ?><li>
+            <?php $__FOR_START_9100__=1;$__FOR_END_9100__=$page['page_count'] + 1;for($i=$__FOR_START_9100__;$i < $__FOR_END_9100__;$i+=1){ ?><li>
                 <?php if($i == $page['page']): ?><span><?php echo ($page["page"]); ?></span>
                   <?php else: ?>
                   <a href="<?php echo U('articleList', '', '');?>/page/<?php echo ($i); ?>"><?php echo ($i); ?></a><?php endif; ?>
@@ -103,13 +106,16 @@
     </div>
   </div>
 
-<div class="footer">power by Phlen 2014-08-03 ：2014-08-17</div>
+<div class="footer">power by Allen.mo</div>
 <script src="/Test/ohana-php/Public/js/lib/jquery-1.11.0.js"></script>
 <script src="/Test/ohana-php/Public/js/lib/jquery.validate.js"></script>
 <script src="/Test/ohana-php/Public/js/lib/jquery.md5.js"></script>
 <script src="/Test/ohana-php/Public/js/lib/bootstrap.js"></script>
 <script src="/Test/ohana-php/Public/js/config.js"></script>
 <script src="/Test/ohana-php/Public/js/common.js"></script>
+<script type="text/javascript">
+
+</script>
 </body>
 
 </html>

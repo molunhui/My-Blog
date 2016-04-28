@@ -13,6 +13,11 @@ class ArticleModel extends Model {
     return $this->add();
   }
 
+  function edit_article() {
+    $this->data['post_time'] = time();
+    $this->data['author'] = $_SESSION['user_id'];
+    return $this->save();
+  }
   function getList($page = 1, $page_size = 10) {
     return $this->alias('a')
                 ->join('__CATEGORY__ c ON a.cid = c.id')

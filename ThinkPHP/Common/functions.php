@@ -1455,3 +1455,54 @@ function filter_exp(&$value){
 function in_array_case($value,$array){
     return in_array(strtolower($value),array_map('strtolower',$array));
 }
+
+
+/**
+** 截取中文字符串
+**/
+function msubstr($str, $start=0, $length, $charset="utf-8", $suffix=true){
+    if(function_exists("mb_substr")){
+        $slice= mb_substr($str, $start, $length, $charset);
+    }elseif(function_exists('iconv_substr')) {
+        $slice= iconv_substr($str,$start,$length,$charset);
+    }else{
+        $re['utf-8'] = "/[x01-x7f]|[xc2-xdf][x80-xbf]|[xe0-xef][x80-xbf]{2}|[xf0-xff][x80-xbf]{3}/";
+        $re['gb2312'] = "/[x01-x7f]|[xb0-xf7][xa0-xfe]/";
+        $re['gbk'] = "/[x01-x7f]|[x81-xfe][x40-xfe]/";
+        $re['big5'] = "/[x01-x7f]|[x81-xfe]([x40-x7e]|xa1-xfe])/";
+        preg_match_all($re[$charset], $str, $match);
+        $slice = join("",array_slice($match[0], $start, $length));
+    }    
+        $fix='';
+        if(strlen($slice) < strlen($str)){
+            $fix='...';
+        }
+        return $suffix ? $slice.$fix : $slice;
+}
+
+
+/**
+ * [getPic description]
+ * 获取文本中首张图片地址
+ * @param  [type] $content [description]
+ * @return [type]          [description]
+ */
+  function getPic($content){
+        if(preg_match_all("/(src)=([\"|']?)([^ \"'>]+\.(gif|jpg|jpeg|bmp|png))\\2/i", $content, $matches)) {
+           $str=$matches[3][0];
+       if (preg_match('/\/Uploads\/images/', $str)) {
+           return $str1=substr($str,7);
+       }
+    }
+}
+
+// function getFirstImg($content) { 
+
+//  $first_img = ''; 
+//  ob_start(); 
+//  ob_end_clean(); 
+//  $output = preg_match_all("/src=\"\/?(.*?)\"/",$content,$match); 
+//  $first_img = $matches[1][0]; 
+ 
+//  return $first_img; 
+// } 

@@ -28,8 +28,9 @@
                 <span class="col-md-4">{$vo.name}</span>
                 <span class="col-md-4">{$vo.email}</span>
                 <span class="col-md-4 ">
-                  <a href="{:U('edit', array(), '')}/id/{$vo.id}">编辑 </a>
-                  <a href="javascript:;" data-id="{$vo.id}" class="del">删除</a>
+                  <a href="{:U('edit', array(), '')}/id/{$vo.id}" class="edit" data-id = "{$vo.id}">编辑 </a>
+                  <!-- <a href="javascript:;" data-id = "{$vo.id}" class="edit">编辑 </a> -->
+                  <a href="javascript:;" data-id = "{$vo.id}" class="del">删除</a>
               </span>
               </li>
             </volist>
@@ -42,5 +43,5 @@
 <include file="Public/footer"/>
 </body>
 <include file = "Public/script"/>
-<script src="__PUBLIC__/js/del_user.js"></script>
+<script src="__PUBLIC__/js/user.js"></script>
 </html>

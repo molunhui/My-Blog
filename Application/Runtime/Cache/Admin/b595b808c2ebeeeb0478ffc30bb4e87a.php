@@ -2,14 +2,14 @@
 <html>
 <head>
   <meta charset="utf-8"/>
-  <link rel="stylesheet" href="/git/ohana-php/Public/css/bootstrap/css/bootstrap.css" />
-<link rel="stylesheet" href="/git/ohana-php/Public/css/bootstrap/css/bootstrap-theme.css" />
-<link rel="stylesheet" href="/git/ohana-php/Public/css/bootstrap/css/font-awesome.css" />
-<link rel="stylesheet" href="/git/ohana-php/Public/css/uploadify.css" />
-<link rel="stylesheet" href="/git/ohana-php/Public/css/reset.css" />
-<link rel="stylesheet" href="/git/ohana-php/Public/css/utils.css" />
-<link rel="stylesheet" href="/git/ohana-php/Public/css/common.css" />
-<link rel="stylesheet" href="/git/ohana-php/Public/css/style.css" />
+  <link rel="stylesheet" href="/Test/ohana-php/Public/css/bootstrap/css/bootstrap.css" />
+<link rel="stylesheet" href="/Test/ohana-php/Public/css/bootstrap/css/bootstrap-theme.css" />
+<link rel="stylesheet" href="/Test/ohana-php/Public/css/bootstrap/css/font-awesome.css" />
+<link rel="stylesheet" href="/Test/ohana-php/Public/css/uploadify.css" />
+<link rel="stylesheet" href="/Test/ohana-php/Public/css/reset.css" />
+<link rel="stylesheet" href="/Test/ohana-php/Public/css/utils.css" />
+<link rel="stylesheet" href="/Test/ohana-php/Public/css/common.css" />
+<link rel="stylesheet" href="/Test/ohana-php/Public/css/style.css" />
   <title>仪表盘</title>
 </head>
 <body>
@@ -17,6 +17,8 @@
   <span class="logo">ohana</span>
   <div class="user" id="user-menu">
     <a href="jsvascript:;"><?php echo ($current_user["name"]); ?></a>
+    <input type="hidden" id="cur_user" value="<?php echo ($current_user["super_admin"]); ?>">
+    <input type="hidden" id="cur_id" value="<?php echo ($current_user["id"]); ?>">
     <ul class="user-sub-menu">
       <li><a href="<?php echo U('user/edit', null, '');?>/id/<?php echo ($current_user["id"]); ?>"><i class="fa fa-pencil"></i>编辑个人资料</a></li>
       <li><a href="<?php echo U('login/unset_session');?>"><i class="fa fa-sign-out"></i>退出</a></li>
@@ -63,7 +65,7 @@
         <div class="col-md-4">
           <p class="h4">基本信息</p>
           <div class="message">
-            <img src="/git/ohana-php/Public/upload/img/<?php echo ($site["logo"]); ?>" alt="LOGO" />
+            <img src="/Test/ohana-php/Public/upload/img/<?php echo ($site["logo"]); ?>" alt="LOGO" />
             <div class="site-name"><?php echo ($site["name"]); ?></div>
           </div>
           <a href="<?php echo U('site/edit');?>" class="btn btn-primary">设置网站信息</a>
@@ -79,12 +81,12 @@
   </div>
 </div>
 
-<div class="footer">power by Phlen 2014-08-03 ：2014-08-17</div>
+<div class="footer">power by Allen.mo</div>
 </body>
-<script src="/git/ohana-php/Public/js/lib/jquery-1.11.0.js"></script>
-<script src="/git/ohana-php/Public/js/lib/jquery.validate.js"></script>
-<script src="/git/ohana-php/Public/js/lib/jquery.md5.js"></script>
-<script src="/git/ohana-php/Public/js/lib/bootstrap.js"></script>
-<script src="/git/ohana-php/Public/js/config.js"></script>
-<script src="/git/ohana-php/Public/js/common.js"></script>
+<script src="/Test/ohana-php/Public/js/lib/jquery-1.11.0.js"></script>
+<script src="/Test/ohana-php/Public/js/lib/jquery.validate.js"></script>
+<script src="/Test/ohana-php/Public/js/lib/jquery.md5.js"></script>
+<script src="/Test/ohana-php/Public/js/lib/bootstrap.js"></script>
+<script src="/Test/ohana-php/Public/js/config.js"></script>
+<script src="/Test/ohana-php/Public/js/common.js"></script>
 </html>

@@ -25,11 +25,11 @@ body {
 }
 
 .container{
-  width: 100%;
-  min-height: 360px;
+  width: 60%;
+  /*min-height: 360px;*/
 }
 .container .main{
   width: 100%;
-  min-height:300px;
-  margin: 20px auto;
+  /*min-height:300px;*/
+  margin: 100px auto;
 }

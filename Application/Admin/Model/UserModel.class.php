@@ -32,15 +32,6 @@ class UserModel extends Model {
     return $user>0 ;
   }
 
-  /*function checkUserNameExist($user_name) {
-    $condition = array(
-      'name' => $user_name
-    );
-
-    $users = $this->where($condition)->select();
-
-    return $users > 0;    //return $users>0 ? true : false
-  }*/
 
   //
   function getUserById($id) {
@@ -54,11 +45,6 @@ class UserModel extends Model {
   function edit($id, $data) {
     return $this->where(array('id' => $id))->save($data);
   }
-
-  /*function deleteById($id) {              //$id 为javascript $.post传递过来的参数。
-    $result = $this->where(array('id' => $id))->delete();
-    return $result;           //若失败return =>false 若成功，return一个非false数据。
-  }*/
 
   function deleteByid($id) {
     $result = $this->where(array('id' => $id))->delete();

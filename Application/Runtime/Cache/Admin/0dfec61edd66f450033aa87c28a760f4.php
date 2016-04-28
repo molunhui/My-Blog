@@ -3,9 +3,9 @@
 
 <head>
   <meta charset="utf-8"/>
-  <link rel="stylesheet" href="/git/ohana-php/Public/css/bootstrap/css/bootstrap.css" />
-  <link rel="stylesheet" href="/git/ohana-php/Public/css/bootstrap/css/bootstrap-theme.css"/>
-  <link rel="stylesheet" href="/git/ohana-php/Public/css/login.css"/>
+  <link rel="stylesheet" href="/Test/ohana-php/Public/css/bootstrap/css/bootstrap.css" />
+  <link rel="stylesheet" href="/Test/ohana-php/Public/css/bootstrap/css/bootstrap-theme.css"/>
+  <link rel="stylesheet" href="/Test/ohana-php/Public/css/login.css"/>
   <title>登陆</title>
 </head>
 <body>
@@ -36,13 +36,13 @@
       </form>
     </div>
   </div>
-  <script src="/git/ohana-php/Public/js/lib/jquery-1.11.0.js"></script>
-<script src="/git/ohana-php/Public/js/lib/jquery.validate.js"></script>
-<script src="/git/ohana-php/Public/js/lib/jquery.md5.js"></script>
-<script src="/git/ohana-php/Public/js/lib/bootstrap.js"></script>
-<script src="/git/ohana-php/Public/js/config.js"></script>
-<script src="/git/ohana-php/Public/js/common.js"></script>
-  <script src="/git/ohana-php/Public/js/login.js"></script>
+  <script src="/Test/ohana-php/Public/js/lib/jquery-1.11.0.js"></script>
+<script src="/Test/ohana-php/Public/js/lib/jquery.validate.js"></script>
+<script src="/Test/ohana-php/Public/js/lib/jquery.md5.js"></script>
+<script src="/Test/ohana-php/Public/js/lib/bootstrap.js"></script>
+<script src="/Test/ohana-php/Public/js/config.js"></script>
+<script src="/Test/ohana-php/Public/js/common.js"></script>
+  <script src="/Test/ohana-php/Public/js/login.js"></script>
 </body>
 
 </html>

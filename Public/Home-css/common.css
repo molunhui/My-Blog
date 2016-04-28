@@ -104,8 +104,13 @@ body{
   text-align: center;
 }
 
-.sidebar figure{
+.sidebar .figure{
   margin-left: 0px;
+}
+.figure img {
+  width: 200px;
+  height: 150px;
+  background-image: center top;
 }
 
 .personal-file{

@@ -8,6 +8,7 @@ return array(
   URL_ROUTE_RULES => array(
     'index' =>'index/index',
     'article/:id\d' => 'Article/article',
+    'article2/:name\S' => 'Article/getArticleByName',
     'article/list/:id\d/[:page\d]/[:page_size\d]' => 'Article/lists',
     'guestBook' => 'GuestBook/guestBook',
   ),

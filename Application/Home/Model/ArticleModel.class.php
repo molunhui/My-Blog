@@ -17,6 +17,9 @@ class ArticleModel extends Model {
     return $this->where(array("id" =>$id))->select();
   }
 
+  function getArticleByName($name) {
+    return $this->where(array("title" =>$name))->select();
+  }
   function allArticle() {
     return $this->select();
   }

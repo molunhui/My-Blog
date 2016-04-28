@@ -2,7 +2,7 @@
   <div class="frame">
     <h2 class="h2"><p>个人档案</p></h2>
     <div class="personal-file">
-      <figure><img src="__PUBLIC__/Home-images/me.png" width="200px" height="150px"></figure>
+      <div class="figure"><img src="__PUBLIC__/upload/img/{$info.logo}"></div>
       <p>姓名：莫伦辉</p>
       <p>网名：莫俊文</p>
       <p>主页：<a href="__ROOT__/home">www.Allen.com</a> </p>
@@ -17,11 +17,11 @@
     <ul class="list list-s1" data-role="accordion">
         <foreach name="navigation" item ="nav" key="k">
           <li>
-            <i class="arrow_carrot-2right" data-role="click-it"></i><a href="__ROOT__/home/article/list/{$nav.id}">{$nav.name}(<php>echo(count($nav['children:']))</php>)</a>
+            <i class="arrow_carrot-2right" data-role="click-it"></i><a href="__ROOT__/article/list/{$nav.id}">{$nav.name}(<php>echo(count($nav['children:']))</php>)</a>
             <ul class="child-list">
               <for start="0" end="count($nav['children:'])">
-
-                <li><a href="__ROOT__/home/article/list/{$nav['children:'][$i]['id']}">{$nav['children:'][$i]['name']}(<php>echo(count($nav['children:'][$i]['children:']))</php>)</a> </li>
+                <!--<li><a href="__ROOT__/article/{$nav.title}" >{$nav['children:'][$i]['name']}</a></li>-->
+                <li><a href="__ROOT__/Article2/{$nav['children:'][$i]['name']}">{$nav['children:'][$i]['name']}</a> </li>
               </for>
             </ul>
           </li>
@@ -33,7 +33,7 @@
     <h2 class="h2"><p>近期文章</p></h2>
     <ul class="list list-s2">
       <volist name="lastArticle" id="art">
-        <li><a href="{:U('article', array(), '')}/{$art.id}">{$art.title}</a> </li>
+        <li><a href="__ROOT__/home/article/{$art.id}">{$art.title}</a> </li>
       </volist>
     </ul>
   </div>

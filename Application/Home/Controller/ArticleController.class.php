@@ -3,6 +3,7 @@
 namespace Home\Controller;
 use Home\Model\ArticleModel;
 use Home\Model\CategoryModel;
+use Home\Model\IndexModel;
 use Think\Controller;
 
 
@@ -12,7 +13,20 @@ class ArticleController extends Controller {
     $this->redirect('index/index');
   }
 
+  function  getArticleByName($name) {
+    $articleModel = new ArticleModel();
+    $article = $articleModel->getArticleByName($name);
+    $this->assign("article" , $article);
+    $this->display('article');
+  }
   function article($id) {
+
+    /*blog info-->*/
+    $indexModel = new IndexModel();
+    $info = $indexModel -> getInfo();
+    $this->assign('info',$info);
+    /*end blog info*/
+    
     /*sidebar -->*/
     $cateModel = new CategoryModel();
     $category = $cateModel->getTree();
@@ -31,6 +45,13 @@ class ArticleController extends Controller {
   }
 
   function lists($id,$page = 1, $page_size = 2) {
+
+    /*blog info-->*/
+    $indexModel = new IndexModel();
+    $info = $indexModel -> getInfo();
+    $this->assign('info',$info);
+    /*end blog info*/
+    
     /*sidebar -->*/
     $cateModel = new CategoryModel();
     $category = $cateModel->getTree();
@@ -47,7 +68,7 @@ class ArticleController extends Controller {
     $listModel = new ArticleModel();
     $articleList = $listModel->getArticleListByCid($id , $page , $page_size);
     $total_count = $articleModel->getTotalByCid($id);
-    /* dump($articleList);*/
+    // dump($articleList);
     $pageMeta = array(
       'page' => $page,
       'page_size' => $page_size,

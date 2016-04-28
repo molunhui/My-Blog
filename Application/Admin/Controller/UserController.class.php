@@ -50,19 +50,6 @@ class UserController extends BaseController {
   }
 
 
-  /*function insert() {
-    $userModel = new UserModel();
-
-    if ($userModel->create() && $userModel->addUser()) {
-      // 添加成功就跳到列表页
-      $this->redirect('user/index');
-
-    } else {
-      $this->error($userModel->getError());
-    }
-  }*/
-
-
   /*
    *
    * 编辑管理员 --》

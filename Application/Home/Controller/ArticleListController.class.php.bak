@@ -3,6 +3,7 @@ namespace Home\Controller;
 use Think\Controller;
 use Home\Model\CategoryModel;
 use Home\Model\ArticleModel;
+use Home\Model\IndexModel;
 class ArticleListController extends Controller {
 
   function Index() {
@@ -10,6 +11,13 @@ class ArticleListController extends Controller {
   }
 
   function articleList($id,$page = 1, $page_size = 2) {
+
+    /*blog info-->*/
+    $indexModel = new IndexModel();
+    $info = $indexModel -> getInfo();
+    $this->assign('info',$info);
+    /*end blog info*/
+    
     /*sidebar -->*/
     $cateModel = new CategoryModel();
     $category = $cateModel->getTree();
