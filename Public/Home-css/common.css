@@ -1,14 +1,39 @@
 body{
+  width: 100%;
+  margin: 0 auto;
   font-size:12px;
   background:#E8DFD8 url(../Home-images/top.jpg)  50% top scroll no-repeat;
   color:#5d5d5d;
   font-family: "微软雅黑";
 }
 
+.login {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.login a {
+  text-decoration: none;
+  color: #5d5d5d;
+}
+
+.login a:hover {
+  /*font-size: 14px;*/
+  font-weight: bold;
+}
+
+/*弹窗部分*/
+  .modal-body {
+    min-height: 300px;
+  }
+
+  .submit-box {
+    width: 112px;
+  }
 /*a:hover{left: 20px;}*/
 .header{
   width: 1000px;
-  padding: 40px 0;
+  padding: 14px 0;
   margin: auto;
   line-height: 2;
 }
@@ -68,6 +93,7 @@ body{
   width: 1030px;
   min-height: 300px;
   margin: 0 auto;
+  padding: 0;
   /*background: url(../Home-images/sidebg.png) 630px bottom no-repeat;*/
   overflow: hidden;
 }
@@ -76,6 +102,10 @@ body{
   width: 745px;
   float: left;
   clear: left;
+}
+
+.main .img-box {
+  padding-left: 50px;
 }
 
 .sidebar{
@@ -109,7 +139,7 @@ body{
 }
 .figure img {
   width: 200px;
-  height: 150px;
+  height: 200px;
   background-image: center top;
 }
 

@@ -11,6 +11,11 @@
    <link rel="stylesheet" href="/Test/ohana-php/Public/css/bootstrap/css/bootstrap-theme.css" />-->
 </head>
 <body>
+  <div class="login">
+    <span>登陆</span>
+    <span>|</span>
+    <span>注册</span>
+  </div>
 <div class="header">
   <h1><a href="javascript:;"><?php echo ($info["name"]); ?></a></h1>
   <a href="javascript" class="word">去留无意，看庭前花开花落；宠辱不惊，望天上云卷云舒.....</a>
@@ -51,7 +56,7 @@
 
             <a href="/Test/ohana-php/home/article/list/<?php echo ($article["cid"]); ?>/<?php echo ($page['page'] - 1); ?>">上一页</a><?php endif; ?>
         </li>
-        <?php $__FOR_START_21136__=1;$__FOR_END_21136__=$page['page_count'] + 1;for($i=$__FOR_START_21136__;$i < $__FOR_END_21136__;$i+=1){ ?><li>
+        <?php $__FOR_START_4692__=1;$__FOR_END_4692__=$page['page_count'] + 1;for($i=$__FOR_START_4692__;$i < $__FOR_END_4692__;$i+=1){ ?><li>
             <?php if($i == $page['page']): ?><span><?php echo ($page["page"]); ?></span>
               <?php else: ?>
 
@@ -86,7 +91,7 @@
         <?php if(is_array($navigation)): foreach($navigation as $k=>$nav): ?><li>
             <i class="arrow_carrot-2right" data-role="click-it"></i><a href="/Test/ohana-php/article/list/<?php echo ($nav["id"]); ?>"><?php echo ($nav["name"]); ?>(<?php echo(count($nav['children:'])) ?>)</a>
             <ul class="child-list">
-              <?php $__FOR_START_26963__=0;$__FOR_END_26963__=count($nav['children:']);for($i=$__FOR_START_26963__;$i < $__FOR_END_26963__;$i+=1){ ?><!--<li><a href="/Test/ohana-php/article/<?php echo ($nav["title"]); ?>" ><?php echo ($nav['children:'][$i]['name']); ?></a></li>-->
+              <?php $__FOR_START_32167__=0;$__FOR_END_32167__=count($nav['children:']);for($i=$__FOR_START_32167__;$i < $__FOR_END_32167__;$i+=1){ ?><!--<li><a href="/Test/ohana-php/article/<?php echo ($nav["title"]); ?>" ><?php echo ($nav['children:'][$i]['name']); ?></a></li>-->
                 <li><a href="/Test/ohana-php/Article2/<?php echo ($nav['children:'][$i]['name']); ?>"><?php echo ($nav['children:'][$i]['name']); ?></a> </li><?php } ?>
             </ul>
           </li><?php endforeach; endif; ?>
